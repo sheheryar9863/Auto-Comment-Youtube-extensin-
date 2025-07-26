@@ -1,0 +1,1453 @@
+ls -R
+.:
+BackApps   install-conf  logo.ico        quick_setup.sh  startVikanBoot.sh  upgradeApp.sh  ViPlayerA    ViWdog
+common.js  install.sh    OpenGLMode.txt  rebootApp.sh    startVikan.sh      ViCom          ViPlayerB    vlc_options.txt
+Config     Items         packages        rtlib           Tools              ViDlder        ViPlayerNew
+
+./BackApps:
+ViCom  ViDlder  ViPlayerA  ViPlayerB  ViWdog
+
+./BackApps/ViCom:
+ViCom
+
+./BackApps/ViDlder:
+ViDlder
+
+./BackApps/ViPlayerA:
+
+./BackApps/ViPlayerB:
+
+./BackApps/ViWdog:
+ViWdog
+
+./Config:
+AdminPassword.txt    DefaultPage          Lang.txt          Remote                      TrunOFEnabled.txt      UserAndPassword.txt
+AudioDeviceEx.txt    DesktopTansform.txt  LED               SchedLoopDur.txt            TrunOffTime.txt        ViIEB.txt
+AutoCheckAndRun.txt  DeviceName.txt       LoopDur.txt       SendPlayRecordInterval.txt  TrunOFTimeParams.txt   ViPlayerA
+AutoHideCursor.txt   EscrowDir.txt        NetworkProxy.txt  SendUserClickInterval.txt   TrunOnTime.txt         ViPlayerB
+AutoHttpData         Features             OpenGLMode.txt    ServerAddressList.txt       TVControlEnable.txt    VolumeDefault.txt
+CardReader.txt       HideExplorer.txt     PaperDays.txt     ServerAddress.txt           TVControlTTY.txt       VolumeEnabled.txt
+CityId.txt           IsPlayerless.txt     PrinterName.txt   ShotInterval.txt            UserAgent_example.txt  VolumeParams.txt
+ClassId.txt          ItemPlayMode.txt     PrinterPager.txt  StartPlay.txt               UserAgent.txt
+
+./Config/AutoHttpData:
+howtodo.txt  sample.json.bak
+
+./Config/DefaultPage:
+en  zh_CN
+
+./Config/DefaultPage/en:
+default.html  error.html  loading.gif  noanyitem.html  waitting.html
+
+./Config/DefaultPage/zh_CN:
+blank.html  default.html  error.html  loading.gif  noanyitem.html  waitting.html
+
+./Config/Features:
+SupportDualMonitor.txt  SupportLED.txt  SupportSSI.txt  SupportTouch.txt
+
+./Config/LED:
+how_to_config.txt  LedRect.txt  led.txt  PortAddress.txt  PortParams.txt
+
+./Config/Remote:
+bitrate.txt     captureSrc.txt  keyFrameInterval.txt  payloadType.txt  signalingPort.txt  ssrc.txt         tune.txt        udpPort.txt
+bufferSize.txt  framerate.txt   mtu.txt               profile.txt      speedPreset.txt    stunServers.txt  udpAddress.txt
+
+./Config/ViPlayerA:
+AutoSyncAddress.txt  ButtonOpenApp.txt  Enable.txt          PlayMonitor.txt      SerialPort.txt              WindowStaysOnTop.txt
+AutoSyncBC.txt       CurrentItem.txt    how_to_config.txt   PositionAndSize.txt  ShowBackButton.txt
+AutoSyncGroup.txt    DontPlayMain.txt   KeyboardEnable.txt  ScreenSaver.txt      ShowItemSelectorButton.txt
+
+./Config/ViPlayerB:
+AutoSyncAddress.txt  CurrentItem.txt   how_to_config.txt   PositionAndSize.txt  ShowItemSelectorButton.txt
+AutoSyncBC.txt       DontPlayMain.txt  KeyboardEnable.txt  ScreenSaver.txt      WindowStaysOnTop.txt
+AutoSyncGroup.txt    Enable.txt        PlayMonitor.txt     ShowBackButton.txt
+
+./install-conf:
+autostart  lightdm
+
+./install-conf/autostart:
+startVikan.sh.desktop
+
+./install-conf/lightdm:
+lightdm.conf
+
+./Items:
+A  B  HD
+
+./Items/A:
+Items  SsItem
+
+./Items/A/Items:
+
+./Items/A/SsItem:
+
+./Items/B:
+Items  SsItem
+
+./Items/B/Items:
+
+./Items/B/SsItem:
+
+./Items/HD:
+
+./packages:
+Codecs  ffmpeg  onboard  p7zip  STANDARD  VLC
+
+./packages/Codecs:
+fontconfig_2.13.1-2ubuntu3_amd64.deb                     libpcre2-8-0_10.34-7ubuntu0.1_amd64.deb
+fontconfig-config_2.13.1-2ubuntu3_all.deb                libpcre3_2%3a8.39-12ubuntu0.1_amd64.deb
+fonts-dejavu-core_2.37-1_all.deb                         libpixman-1-0_0.38.4-0ubuntu2.1_amd64.deb
+fonts-liberation_1%3a1.07.4-11_all.deb                   libpng16-16_1.6.37-2_amd64.deb
+gcc-10-base_10.5.0-1ubuntu1~20.04_amd64.deb              librsvg2-2_2.48.9-1ubuntu0.20.04.4_amd64.deb
+libacl1_2.2.53-6_amd64.deb                               libselinux1_3.0-1build2_amd64.deb
+libaom0_1.0.0.errata1-3+deb11u1build0.20.04.1_amd64.deb  libshine3_3.1.1-2_amd64.deb
+libaribb24-0_1.0.3-2_amd64.deb                           libsnappy1v5_1.1.8-1build1_amd64.deb
+libattr1_1%3a2.4.48-5_amd64.deb                          libsoxr0_0.1.3-2build1_amd64.deb
+libavcodec-extra58_7%3a4.2.7-0ubuntu0.1_amd64.deb        libspeex1_1.2~rc1.2-1.1ubuntu1.20.04.1_amd64.deb
+libavcodec-extra_7%3a4.2.7-0ubuntu0.1_amd64.deb          libstdc++6_10.5.0-1ubuntu1~20.04_amd64.deb
+libavutil56_7%3a4.2.7-0ubuntu0.1_amd64.deb               libswresample3_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libblkid1_2.34-0.1ubuntu9.3_amd64.deb                    libthai0_0.1.28-3_amd64.deb
+libbsd0_0.10.0-1_amd64.deb                               libthai-data_0.1.28-3_all.deb
+libbz2-1.0_1.0.8-2_amd64.deb                             libtheora0_1.1.1+dfsg.1-15ubuntu2_amd64.deb
+libcairo2_1.16.0-4ubuntu1_amd64.deb                      libtiff5_4.1.0+git191117-2ubuntu0.20.04.12_amd64.deb
+libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb              libtwolame0_0.4.0-2_amd64.deb
+libcodec2-0.9_0.9.2-2_amd64.deb                          libuuid1_2.34-0.1ubuntu9.3_amd64.deb
+libcrypt1_1%3a4.4.10-10ubuntu4_amd64.deb                 libva2_2.7.0-2_amd64.deb
+libdatrie1_0.2.12-3_amd64.deb                            libva-drm2_2.7.0-2_amd64.deb
+libdrm2_2.4.107-8ubuntu1~20.04.2_amd64.deb               libva-x11-2_2.7.0-2_amd64.deb
+libdrm-common_2.4.107-8ubuntu1~20.04.2_all.deb           libvdpau1_1.3-1ubuntu2_amd64.deb
+libexpat1_2.2.9-1ubuntu0.6_amd64.deb                     libvo-amrwbenc0_0.1.3-2_amd64.deb
+libffi7_3.3-4_amd64.deb                                  libvorbis0a_1.3.6-2ubuntu1_amd64.deb
+libfontconfig1_2.13.1-2ubuntu3_amd64.deb                 libvorbisenc2_1.3.6-2ubuntu1_amd64.deb
+libfreetype6_2.10.1-2ubuntu0.3_amd64.deb                 libvpx6_1.8.2-1ubuntu0.2_amd64.deb
+libfribidi0_1.0.8-2ubuntu0.1_amd64.deb                   libwavpack1_5.2.0-1ubuntu0.1_amd64.deb
+libgcc-s1_10.5.0-1ubuntu1~20.04_amd64.deb                libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgdk-pixbuf2.0-0_2.40.0+dfsg-3ubuntu0.4_amd64.deb      libwebpmux3_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgdk-pixbuf2.0-common_2.40.0+dfsg-3ubuntu0.4_all.deb   libx11-6_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libglib2.0-0_2.64.6-1~ubuntu20.04.6_amd64.deb            libx11-data_2%3a1.6.9-2ubuntu1.6_all.deb
+libgomp1_10.5.0-1ubuntu1~20.04_amd64.deb                 libx264-155_2%3a0.155.2917+git0a84d98-2_amd64.deb
+libgraphite2-3_1.3.13-11build1_amd64.deb                 libx265-179_3.2.1-1build1_amd64.deb
+libgsm1_1.0.18-2_amd64.deb                               libxau6_1%3a1.0.9-0ubuntu1_amd64.deb
+libharfbuzz0b_2.6.4-1ubuntu4.2_amd64.deb                 libxcb1_1.14-2_amd64.deb
+libicu66_66.1-2ubuntu2.1_amd64.deb                       libxcb-render0_1.14-2_amd64.deb
+libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb                libxcb-shm0_1.14-2_amd64.deb
+libjpeg8_8c-2ubuntu8_amd64.deb                           libxdmcp6_1%3a1.1.3-0ubuntu1_amd64.deb
+libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb          libxext6_2%3a1.3.4-0ubuntu1_amd64.deb
+liblzma5_5.2.4-1ubuntu1.1_amd64.deb                      libxfixes3_1%3a5.0.3-2_amd64.deb
+libmount1_2.34-0.1ubuntu9.3_amd64.deb                    libxml2_2.9.10+dfsg-5ubuntu0.20.04.7_amd64.deb
+libmp3lame0_3.100-3_amd64.deb                            libxrender1_1%3a0.9.10-1_amd64.deb
+libnuma1_2.0.12-1_amd64.deb                              libxvidcore4_2%3a1.3.7-1_amd64.deb
+libogg0_1.3.4-0ubuntu1_amd64.deb                         libzstd1_1.4.4+dfsg-3ubuntu0.1_amd64.deb
+libopencore-amrnb0_0.1.5-1_amd64.deb                     libzvbi0_0.2.35-17_amd64.deb
+libopencore-amrwb0_0.1.5-1_amd64.deb                     libzvbi-common_0.2.35-17_all.deb
+libopenjp2-7_2.3.1-1ubuntu4.20.04.1_amd64.deb            ocl-icd-libopencl1_2.2.11-1ubuntu1_amd64.deb
+libopus0_1.3.1-0ubuntu1_amd64.deb                        perl-base_5.30.0-9ubuntu0.5_amd64.deb
+libpango-1.0-0_1.44.7-2ubuntu4_amd64.deb                 shared-mime-info_1.15-1_amd64.deb
+libpangocairo-1.0-0_1.44.7-2ubuntu4_amd64.deb            ttf-bitstream-vera_1.10-8_all.deb
+libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb              tzdata_2024a-0ubuntu0.20.04_all.deb
+
+./packages/ffmpeg:
+coreutils_8.30-3ubuntu2_amd64.deb                        libpciaccess0_0.16-0ubuntu1_amd64.deb
+debconf_1.5.73_all.deb                                   libpcre2-8-0_10.34-7ubuntu0.1_amd64.deb
+dpkg_1.19.7ubuntu3.2_amd64.deb                           libpcre3_2%3a8.39-12ubuntu0.1_amd64.deb
+ffmpeg_7%3a4.2.7-0ubuntu0.1_amd64.deb                    libpgm-5.2-0_5.2.122~dfsg-3ubuntu1_amd64.deb
+fontconfig_2.13.1-2ubuntu3_amd64.deb                     libpixman-1-0_0.38.4-0ubuntu2.1_amd64.deb
+fontconfig-config_2.13.1-2ubuntu3_all.deb                libpng16-16_1.6.37-2_amd64.deb
+fonts-dejavu-core_2.37-1_all.deb                         libpostproc55_7%3a4.2.7-0ubuntu0.1_amd64.deb
+fonts-liberation_1%3a1.07.4-11_all.deb                   libraw1394-11_2.1.2-1_amd64.deb
+gcc-10-base_10.5.0-1ubuntu1~20.04_amd64.deb              librsvg2-2_2.48.9-1ubuntu0.20.04.4_amd64.deb
+libacl1_2.2.53-6_amd64.deb                               librubberband2_1.8.2-1build1_amd64.deb
+libaom0_1.0.0.errata1-3+deb11u1build0.20.04.1_amd64.deb  libsamplerate0_0.1.9-2_amd64.deb
+libass9_1%3a0.14.0-2_amd64.deb                           libsdl2-2.0-0_2.0.10+dfsg1-3_amd64.deb
+libasyncns0_0.8-6_amd64.deb                              libselinux1_3.0-1build2_amd64.deb
+libattr1_1%3a2.4.48-5_amd64.deb                          libsensors5_1%3a3.6.0-2ubuntu1_amd64.deb
+libavc1394-0_0.5.4-5_amd64.deb                           libsensors-config_1%3a3.6.0-2ubuntu1_all.deb
+libavdevice58_7%3a4.2.7-0ubuntu0.1_amd64.deb             libserd-0-0_0.30.2-1_amd64.deb
+libavfilter7_7%3a4.2.7-0ubuntu0.1_amd64.deb              libshine3_3.1.1-2_amd64.deb
+libavformat58_7%3a4.2.7-0ubuntu0.1_amd64.deb             libslang2_2.3.2-4_amd64.deb
+libavresample4_7%3a4.2.7-0ubuntu0.1_amd64.deb            libsnappy1v5_1.1.8-1build1_amd64.deb
+libavutil56_7%3a4.2.7-0ubuntu0.1_amd64.deb               libsndfile1_1.0.28-7ubuntu0.2_amd64.deb
+libblkid1_2.34-0.1ubuntu9.3_amd64.deb                    libsndio7.0_1.5.0-3_amd64.deb
+libbluray2_1%3a1.2.0-1_amd64.deb                         libsodium23_1.0.18-1_amd64.deb
+libbs2b0_3.1.0+dfsg-2.2build1_amd64.deb                  libsord-0-0_0.16.4-1_amd64.deb
+libbsd0_0.10.0-1_amd64.deb                               libsoxr0_0.1.3-2build1_amd64.deb
+libbz2-1.0_1.0.8-2_amd64.deb                             libspeex1_1.2~rc1.2-1.1ubuntu1.20.04.1_amd64.deb
+libcaca0_0.99.beta19-2.1ubuntu1.20.04.2_amd64.deb        libsratom-0-0_0.6.4-1_amd64.deb
+libcairo2_1.16.0-4ubuntu1_amd64.deb                      libssh-gcrypt-4_0.9.3-2ubuntu2.5_amd64.deb
+libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb              libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
+libcdio18_2.0.0-2_amd64.deb                              libstdc++6_10.5.0-1ubuntu1~20.04_amd64.deb
+libcdio-cdda2_10.2+2.0.0-1_amd64.deb                     libswresample3_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libcdio-paranoia2_10.2+2.0.0-1_amd64.deb                 libswscale5_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libchromaprint1_1.4.3-3build1_amd64.deb                  libsystemd0_245.4-4ubuntu3.20_amd64.deb
+libcodec2-0.9_0.9.2-2_amd64.deb                          libtasn1-6_4.16.0-2_amd64.deb
+libcom-err2_1.45.5-2ubuntu1.1_amd64.deb                  libthai0_0.1.28-3_amd64.deb
+libcrypt1_1%3a4.4.10-10ubuntu4_amd64.deb                 libthai-data_0.1.28-3_all.deb
+libdatrie1_0.2.12-3_amd64.deb                            libtheora0_1.1.1+dfsg.1-15ubuntu2_amd64.deb
+libdbus-1-3_1.12.16-2ubuntu2.3_amd64.deb                 libtiff5_4.1.0+git191117-2ubuntu0.20.04.12_amd64.deb
+libdc1394-22_2.2.5-2.1_amd64.deb                         libtinfo6_6.2-0ubuntu2.1_amd64.deb
+libdrm2_2.4.107-8ubuntu1~20.04.2_amd64.deb               libtwolame0_0.4.0-2_amd64.deb
+libdrm-amdgpu1_2.4.107-8ubuntu1~20.04.2_amd64.deb        libunistring2_0.9.10-2_amd64.deb
+libdrm-common_2.4.107-8ubuntu1~20.04.2_all.deb           libusb-1.0-0_2%3a1.0.23-2build1_amd64.deb
+libdrm-intel1_2.4.107-8ubuntu1~20.04.2_amd64.deb         libuuid1_2.34-0.1ubuntu9.3_amd64.deb
+libdrm-nouveau2_2.4.107-8ubuntu1~20.04.2_amd64.deb       libva2_2.7.0-2_amd64.deb
+libdrm-radeon1_2.4.107-8ubuntu1~20.04.2_amd64.deb        libva-drm2_2.7.0-2_amd64.deb
+libedit2_3.1-20191231-1_amd64.deb                        libva-x11-2_2.7.0-2_amd64.deb
+libelf1_0.176-1.1ubuntu0.1_amd64.deb                     libvdpau1_1.3-1ubuntu2_amd64.deb
+libexpat1_2.2.9-1ubuntu0.6_amd64.deb                     libvidstab1.1_1.1.0-2_amd64.deb
+libffi7_3.3-4_amd64.deb                                  libvorbis0a_1.3.6-2ubuntu1_amd64.deb
+libfftw3-double3_3.3.8-2ubuntu1_amd64.deb                libvorbisenc2_1.3.6-2ubuntu1_amd64.deb
+libflac8_1.3.3-1ubuntu0.2_amd64.deb                      libvorbisfile3_1.3.6-2ubuntu1_amd64.deb
+libflite1_2.1-release-3_amd64.deb                        libvpx6_1.8.2-1ubuntu0.2_amd64.deb
+libfontconfig1_2.13.1-2ubuntu3_amd64.deb                 libvulkan1_1.2.131.2-1_amd64.deb
+libfreetype6_2.10.1-2ubuntu0.3_amd64.deb                 libwavpack1_5.2.0-1ubuntu0.1_amd64.deb
+libfribidi0_1.0.8-2ubuntu0.1_amd64.deb                   libwayland-client0_1.18.0-1ubuntu0.1_amd64.deb
+libgcc-s1_10.5.0-1ubuntu1~20.04_amd64.deb                libwayland-cursor0_1.18.0-1ubuntu0.1_amd64.deb
+libgcrypt20_1.8.5-5ubuntu1.1_amd64.deb                   libwayland-egl1_1.18.0-1ubuntu0.1_amd64.deb
+libgdk-pixbuf2.0-0_2.40.0+dfsg-3ubuntu0.4_amd64.deb      libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgdk-pixbuf2.0-common_2.40.0+dfsg-3ubuntu0.4_all.deb   libwebpmux3_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgl1_1.3.2-1~ubuntu0.20.04.2_amd64.deb                 libwrap0_7.6.q-30_amd64.deb
+libgl1-mesa-dri_21.2.6-0ubuntu0.1~20.04.2_amd64.deb      libx11-6_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libglapi-mesa_21.2.6-0ubuntu0.1~20.04.2_amd64.deb        libx11-data_2%3a1.6.9-2ubuntu1.6_all.deb
+libglib2.0-0_2.64.6-1~ubuntu20.04.6_amd64.deb            libx11-xcb1_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libglvnd0_1.3.2-1~ubuntu0.20.04.2_amd64.deb              libx264-155_2%3a0.155.2917+git0a84d98-2_amd64.deb
+libglx0_1.3.2-1~ubuntu0.20.04.2_amd64.deb                libx265-179_3.2.1-1build1_amd64.deb
+libglx-mesa0_21.2.6-0ubuntu0.1~20.04.2_amd64.deb         libxau6_1%3a1.0.9-0ubuntu1_amd64.deb
+libgme0_0.6.2-1build1_amd64.deb                          libxcb1_1.14-2_amd64.deb
+libgmp10_2%3a6.2.0+dfsg-4ubuntu0.1_amd64.deb             libxcb-dri2-0_1.14-2_amd64.deb
+libgnutls30_3.6.13-2ubuntu1.10_amd64.deb                 libxcb-dri3-0_1.14-2_amd64.deb
+libgomp1_10.5.0-1ubuntu1~20.04_amd64.deb                 libxcb-glx0_1.14-2_amd64.deb
+libgpg-error0_1.37-1_amd64.deb                           libxcb-present0_1.14-2_amd64.deb
+libgraphite2-3_1.3.13-11build1_amd64.deb                 libxcb-render0_1.14-2_amd64.deb
+libgsm1_1.0.18-2_amd64.deb                               libxcb-shape0_1.14-2_amd64.deb
+libgssapi-krb5-2_1.17-6ubuntu4.4_amd64.deb               libxcb-shm0_1.14-2_amd64.deb
+libharfbuzz0b_2.6.4-1ubuntu4.2_amd64.deb                 libxcb-sync1_1.14-2_amd64.deb
+libhogweed5_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb       libxcb-xfixes0_1.14-2_amd64.deb
+libicu66_66.1-2ubuntu2.1_amd64.deb                       libxcursor1_1%3a1.2.0-2_amd64.deb
+libidn2-0_2.2.0-2_amd64.deb                              libxdmcp6_1%3a1.1.3-0ubuntu1_amd64.deb
+libiec61883-0_1.2.0-3_amd64.deb                          libxext6_2%3a1.3.4-0ubuntu1_amd64.deb
+libjack-jackd2-0_1.9.12~dfsg-2ubuntu2_amd64.deb          libxfixes3_1%3a5.0.3-2_amd64.deb
+libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb                libxi6_2%3a1.7.10-0ubuntu1_amd64.deb
+libjpeg8_8c-2ubuntu8_amd64.deb                           libxinerama1_2%3a1.1.4-2_amd64.deb
+libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb          libxkbcommon0_0.10.0-1_amd64.deb
+libk5crypto3_1.17-6ubuntu4.4_amd64.deb                   libxml2_2.9.10+dfsg-5ubuntu0.20.04.7_amd64.deb
+libkeyutils1_1.6-6ubuntu1_amd64.deb                      libxrandr2_2%3a1.5.2-0ubuntu1_amd64.deb
+libkrb5-3_1.17-6ubuntu4.4_amd64.deb                      libxrender1_1%3a0.9.10-1_amd64.deb
+libkrb5support0_1.17-6ubuntu4.4_amd64.deb                libxshmfence1_1.3-1_amd64.deb
+libllvm12_1%3a12.0.0-3ubuntu1~20.04.5_amd64.deb          libxss1_1%3a1.2.3-1_amd64.deb
+liblz4-1_1.9.2-2ubuntu0.20.04.1_amd64.deb                libxv1_2%3a1.0.11-1_amd64.deb
+liblzma5_5.2.4-1ubuntu1.1_amd64.deb                      libxvidcore4_2%3a1.3.7-1_amd64.deb
+libmount1_2.34-0.1ubuntu9.3_amd64.deb                    libxxf86vm1_1%3a1.1.4-1build1_amd64.deb
+libmp3lame0_3.100-3_amd64.deb                            libzmq5_4.3.2-2ubuntu1_amd64.deb
+libmpg123-0_1.25.13-1_amd64.deb                          libzstd1_1.4.4+dfsg-3ubuntu0.1_amd64.deb
+libmysofa1_1.0~dfsg0-1_amd64.deb                         libzvbi0_0.2.35-17_amd64.deb
+libncursesw6_6.2-0ubuntu2.1_amd64.deb                    libzvbi-common_0.2.35-17_all.deb
+libnettle7_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb        lsb-base_11.1.0ubuntu2_all.deb
+libnorm1_1.5.8+dfsg2-2build1_amd64.deb                   ocl-icd-libopencl1_2.2.11-1ubuntu1_amd64.deb
+libnuma1_2.0.12-1_amd64.deb                              perl-base_5.30.0-9ubuntu0.5_amd64.deb
+libogg0_1.3.4-0ubuntu1_amd64.deb                         sensible-utils_0.0.12+nmu1_all.deb
+libopenal1_1%3a1.19.1-1_amd64.deb                        shared-mime-info_1.15-1_amd64.deb
+libopenal-data_1%3a1.19.1-1_all.deb                      tar_1.30+dfsg-7ubuntu0.20.04.4_amd64.deb
+libopenjp2-7_2.3.1-1ubuntu4.20.04.1_amd64.deb            ttf-bitstream-vera_1.10-8_all.deb
+libopenmpt0_0.4.11-1build1_amd64.deb                     tzdata_2024a-0ubuntu0.20.04_all.deb
+libopus0_1.3.1-0ubuntu1_amd64.deb                        ucf_3.0038+nmu1_all.deb
+libp11-kit0_0.23.20-1ubuntu0.1_amd64.deb                 x11-common_1%3a7.7+19ubuntu14_all.deb
+libpango-1.0-0_1.44.7-2ubuntu4_amd64.deb                 xkb-data_2.29-2_all.deb
+libpangocairo-1.0-0_1.44.7-2ubuntu4_amd64.deb            zlib1g_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb
+libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb
+
+./packages/onboard:
+adwaita-icon-theme-full_3.36.0-1ubuntu1_all.deb         libpango-1.0-0_1.44.7-2ubuntu4_amd64.deb
+dconf-gsettings-backend_0.36.0-1_amd64.deb              libpangocairo-1.0-0_1.44.7-2ubuntu4_amd64.deb
+dconf-service_0.36.0-1_amd64.deb                        libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb
+fontconfig_2.13.1-2ubuntu3_amd64.deb                    libpangoxft-1.0-0_1.44.7-2ubuntu4_amd64.deb
+fontconfig-config_2.13.1-2ubuntu3_all.deb               libpcre2-8-0_10.34-7ubuntu0.1_amd64.deb
+fonts-dejavu-core_2.37-1_all.deb                        libpcre3_2%3a8.39-12ubuntu0.1_amd64.deb
+fonts-liberation_1%3a1.07.4-11_all.deb                  libpixman-1-0_0.38.4-0ubuntu2.1_amd64.deb
+gcc-10-base_10.5.0-1ubuntu1~20.04_amd64.deb             libpng16-16_1.6.37-2_amd64.deb
+gir1.2-atk-1.0_2.35.1-1ubuntu2_amd64.deb                libproxy1v5_0.4.15-10ubuntu1.2_amd64.deb
+gir1.2-gdkpixbuf-2.0_2.40.0+dfsg-3ubuntu0.4_amd64.deb   libpsl5_0.21.0-1ubuntu1_amd64.deb
+gir1.2-pango-1.0_1.44.7-2ubuntu4_amd64.deb              libpython3.8-minimal_3.8.10-0ubuntu1~20.04.9_amd64.deb
+glib-networking_2.64.2-1ubuntu0.1_amd64.deb             libpython3.8-stdlib_3.8.10-0ubuntu1~20.04.9_amd64.deb
+glib-networking-common_2.64.2-1ubuntu0.1_all.deb        libpython3-stdlib_3.8.2-0ubuntu2_amd64.deb
+glib-networking-services_2.64.2-1ubuntu0.1_amd64.deb    libreadline8_8.0-4_amd64.deb
+gsettings-desktop-schemas_3.36.0-1ubuntu1_all.deb       librest-0.7-0_0.8.1-1_amd64.deb
+hicolor-icon-theme_0.17-2_all.deb                       librsvg2-2_2.48.9-1ubuntu0.20.04.4_amd64.deb
+humanity-icon-theme_0.6.15_all.deb                      librsvg2-common_2.48.9-1ubuntu0.20.04.4_amd64.deb
+install-info_6.7.0.dfsg.2-5_amd64.deb                   libselinux1_3.0-1build2_amd64.deb
+iso-codes_4.4-1_all.deb                                 libsoup2.4-1_2.70.0-1_amd64.deb
+libacl1_2.2.53-6_amd64.deb                              libsoup-gnome2.4-1_2.70.0-1_amd64.deb
+libatk1.0-0_2.35.1-1ubuntu2_amd64.deb                   libsqlite3-0_3.31.1-4ubuntu0.6_amd64.deb
+libatk1.0-data_2.35.1-1ubuntu2_all.deb                  libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
+libatspi2.0-0_2.36.0-2_amd64.deb                        libstdc++6_10.5.0-1ubuntu1~20.04_amd64.deb
+libattr1_1%3a2.4.48-5_amd64.deb                         libsystemd0_245.4-4ubuntu3.20_amd64.deb
+libavahi-client3_0.7-4ubuntu7.3_amd64.deb               libtasn1-6_4.16.0-2_amd64.deb
+libavahi-common3_0.7-4ubuntu7.3_amd64.deb               libtdb1_1.4.5-0ubuntu0.20.04.1_amd64.deb
+libavahi-common-data_0.7-4ubuntu7.3_amd64.deb           libthai0_0.1.28-3_amd64.deb
+libblkid1_2.34-0.1ubuntu9.3_amd64.deb                   libthai-data_0.1.28-3_all.deb
+libbrotli1_1.0.7-6ubuntu0.1_amd64.deb                   libtiff5_4.1.0+git191117-2ubuntu0.20.04.12_amd64.deb
+libbsd0_0.10.0-1_amd64.deb                              libtinfo6_6.2-0ubuntu2.1_amd64.deb
+libbz2-1.0_1.0.8-2_amd64.deb                            libunistring2_0.9.10-2_amd64.deb
+libcairo2_1.16.0-4ubuntu1_amd64.deb                     libuuid1_2.34-0.1ubuntu9.3_amd64.deb
+libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb             libvorbis0a_1.3.6-2ubuntu1_amd64.deb
+libcanberra0_0.30-7ubuntu1_amd64.deb                    libvorbisfile3_1.3.6-2ubuntu1_amd64.deb
+libcolord2_1.4.4-2_amd64.deb                            libwayland-client0_1.18.0-1ubuntu0.1_amd64.deb
+libcom-err2_1.45.5-2ubuntu1.1_amd64.deb                 libwayland-cursor0_1.18.0-1ubuntu0.1_amd64.deb
+libcrypt1_1%3a4.4.10-10ubuntu4_amd64.deb                libwayland-egl1_1.18.0-1ubuntu0.1_amd64.deb
+libcups2_2.3.1-9ubuntu1.6_amd64.deb                     libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libdatrie1_0.2.12-3_amd64.deb                           libx11-6_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libdb5.3_5.3.28+dfsg1-0.6ubuntu2_amd64.deb              libx11-data_2%3a1.6.9-2ubuntu1.6_all.deb
+libdbus-1-3_1.12.16-2ubuntu2.3_amd64.deb                libxau6_1%3a1.0.9-0ubuntu1_amd64.deb
+libdconf1_0.36.0-1_amd64.deb                            libxcb1_1.14-2_amd64.deb
+libepoxy0_1.5.4-1_amd64.deb                             libxcb-render0_1.14-2_amd64.deb
+libexpat1_2.2.9-1ubuntu0.6_amd64.deb                    libxcb-shm0_1.14-2_amd64.deb
+libffi7_3.3-4_amd64.deb                                 libxcomposite1_1%3a0.4.5-1_amd64.deb
+libfontconfig1_2.13.1-2ubuntu3_amd64.deb                libxcursor1_1%3a1.2.0-2_amd64.deb
+libfreetype6_2.10.1-2ubuntu0.3_amd64.deb                libxdamage1_1%3a1.1.5-2_amd64.deb
+libfribidi0_1.0.8-2ubuntu0.1_amd64.deb                  libxdmcp6_1%3a1.1.3-0ubuntu1_amd64.deb
+libgcc-s1_10.5.0-1ubuntu1~20.04_amd64.deb               libxext6_2%3a1.3.4-0ubuntu1_amd64.deb
+libgcrypt20_1.8.5-5ubuntu1.1_amd64.deb                  libxfixes3_1%3a5.0.3-2_amd64.deb
+libgdk-pixbuf2.0-0_2.40.0+dfsg-3ubuntu0.4_amd64.deb     libxft2_2.3.3-0ubuntu1_amd64.deb
+libgdk-pixbuf2.0-common_2.40.0+dfsg-3ubuntu0.4_all.deb  libxi6_2%3a1.7.10-0ubuntu1_amd64.deb
+libglib2.0-0_2.64.6-1~ubuntu20.04.6_amd64.deb           libxinerama1_2%3a1.1.4-2_amd64.deb
+libgmp10_2%3a6.2.0+dfsg-4ubuntu0.1_amd64.deb            libxkbcommon0_0.10.0-1_amd64.deb
+libgnutls30_3.6.13-2ubuntu1.10_amd64.deb                libxkbfile1_1%3a1.1.0-1_amd64.deb
+libgpg-error0_1.37-1_amd64.deb                          libxml2_2.9.10+dfsg-5ubuntu0.20.04.7_amd64.deb
+libgraphite2-3_1.3.13-11build1_amd64.deb                libxrandr2_2%3a1.5.2-0ubuntu1_amd64.deb
+libgssapi-krb5-2_1.17-6ubuntu4.4_amd64.deb              libxrender1_1%3a0.9.10-1_amd64.deb
+libharfbuzz0b_2.6.4-1ubuntu4.2_amd64.deb                libxtst6_2%3a1.2.3-1_amd64.deb
+libhogweed5_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb      libzstd1_1.4.4+dfsg-3ubuntu0.1_amd64.deb
+libhunspell-1.7-0_1.7.0-2build2_amd64.deb               lsb-base_11.1.0ubuntu2_all.deb
+libicu66_66.1-2ubuntu2.1_amd64.deb                      mime-support_3.64ubuntu1_all.deb
+libidn2-0_2.2.0-2_amd64.deb                             onboard_1.4.1-2ubuntu7_amd64.deb
+libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb               onboard-common_1.4.1-2ubuntu7_all.deb
+libjpeg8_8c-2ubuntu8_amd64.deb                          perl-base_5.30.0-9ubuntu0.5_amd64.deb
+libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb         python3_3.8.2-0ubuntu2_amd64.deb
+libjson-glib-1.0-0_1.4.4-2ubuntu2_amd64.deb             python3.8_3.8.10-0ubuntu1~20.04.9_amd64.deb
+libjson-glib-1.0-common_1.4.4-2ubuntu2_all.deb          python3.8-minimal_3.8.10-0ubuntu1~20.04.9_amd64.deb
+libk5crypto3_1.17-6ubuntu4.4_amd64.deb                  python3-cairo_1.16.2-2ubuntu2_amd64.deb
+libkeyutils1_1.6-6ubuntu1_amd64.deb                     python3-dbus_1.2.16-1build1_amd64.deb
+libkrb5-3_1.17-6ubuntu4.4_amd64.deb                     python3-gi_3.36.0-1_amd64.deb
+libkrb5support0_1.17-6ubuntu4.4_amd64.deb               python3-gi-cairo_3.36.0-1_amd64.deb
+liblcms2-2_2.9-4_amd64.deb                              python3-minimal_3.8.2-0ubuntu2_amd64.deb
+libltdl7_2.4.6-14_amd64.deb                             readline-common_8.0-4_all.deb
+liblz4-1_1.9.2-2ubuntu0.20.04.1_amd64.deb               shared-mime-info_1.15-1_amd64.deb
+liblzma5_5.2.4-1ubuntu1.1_amd64.deb                     sound-theme-freedesktop_0.8-2ubuntu1_all.deb
+libmount1_2.34-0.1ubuntu9.3_amd64.deb                   ttf-bitstream-vera_1.10-8_all.deb
+libmpdec2_2.4.2-3_amd64.deb                             tzdata_2024a-0ubuntu0.20.04_all.deb
+libncursesw6_6.2-0ubuntu2.1_amd64.deb                   ubuntu-mono_19.04-0ubuntu3_all.deb
+libnettle7_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb       x11-common_1%3a7.7+19ubuntu14_all.deb
+libogg0_1.3.4-0ubuntu1_amd64.deb                        xkb-data_2.29-2_all.deb
+libp11-kit0_0.23.20-1ubuntu0.1_amd64.deb
+
+./packages/p7zip:
+gcc-10-base_10.5.0-1ubuntu1~20.04_amd64.deb  libgcc-s1_10.5.0-1ubuntu1~20.04_amd64.deb   p7zip_16.02+dfsg-7build1_amd64.deb
+libcrypt1_1%3a4.4.10-10ubuntu4_amd64.deb     libstdc++6_10.5.0-1ubuntu1~20.04_amd64.deb  p7zip-full_16.02+dfsg-7build1_amd64.deb
+
+./packages/STANDARD:
+coreutils_8.30-3ubuntu2_amd64.deb  libc6_2.31-0ubuntu9.14_amd64.deb          ucf_3.0038+nmu1_all.deb
+debconf_1.5.73_all.deb             sensible-utils_0.0.12+nmu1_all.deb        zlib1g_1%3a1.2.11.dfsg-2ubuntu1.5_amd64.deb
+dpkg_1.19.7ubuntu3.2_amd64.deb     tar_1.30+dfsg-7ubuntu0.20.04.4_amd64.deb
+
+./packages/VLC:
+fontconfig_2.13.1-2ubuntu3_amd64.deb                     libpangoft2-1.0-0_1.44.7-2ubuntu4_amd64.deb
+fontconfig-config_2.13.1-2ubuntu3_all.deb                libpciaccess0_0.16-0ubuntu1_amd64.deb
+fonts-dejavu-core_2.37-1_all.deb                         libpcre2-16-0_10.34-7ubuntu0.1_amd64.deb
+fonts-liberation_1%3a1.07.4-11_all.deb                   libpcre2-8-0_10.34-7ubuntu0.1_amd64.deb
+gcc-10-base_10.5.0-1ubuntu1~20.04_amd64.deb              libpcre3_2%3a8.39-12ubuntu0.1_amd64.deb
+liba52-0.7.4_0.7.4-20_amd64.deb                          libpixman-1-0_0.38.4-0ubuntu2.1_amd64.deb
+libaa1_1.4p5-46_amd64.deb                                libplacebo7_1.7.0-2_amd64.deb
+libacl1_2.2.53-6_amd64.deb                               libpng16-16_1.6.37-2_amd64.deb
+libaom0_1.0.0.errata1-3+deb11u1build0.20.04.1_amd64.deb  libpostproc55_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libarchive13_3.4.0-2ubuntu1.2_amd64.deb                  libprotobuf-lite17_3.6.1.3-2ubuntu5.2_amd64.deb
+libaribb24-0_1.0.3-2_amd64.deb                           libqt5core5a_5.12.8+dfsg-0ubuntu2.1_amd64.deb
+libass9_1%3a0.14.0-2_amd64.deb                           libqt5dbus5_5.12.8+dfsg-0ubuntu2.1_amd64.deb
+libasyncns0_0.8-6_amd64.deb                              libqt5gui5_5.12.8+dfsg-0ubuntu2.1_amd64.deb
+libattr1_1%3a2.4.48-5_amd64.deb                          libqt5network5_5.12.8+dfsg-0ubuntu2.1_amd64.deb
+libavahi-client3_0.7-4ubuntu7.3_amd64.deb                libqt5svg5_5.12.8-0ubuntu1_amd64.deb
+libavahi-common3_0.7-4ubuntu7.3_amd64.deb                libqt5widgets5_5.12.8+dfsg-0ubuntu2.1_amd64.deb
+libavahi-common-data_0.7-4ubuntu7.3_amd64.deb            libqt5x11extras5_5.12.8-0ubuntu1_amd64.deb
+libavc1394-0_0.5.4-5_amd64.deb                           libraw1394-11_2.1.2-1_amd64.deb
+libavformat58_7%3a4.2.7-0ubuntu0.1_amd64.deb             libresid-builder0c2a_2.1.1-15ubuntu2_amd64.deb
+libavutil56_7%3a4.2.7-0ubuntu0.1_amd64.deb               librsvg2-2_2.48.9-1ubuntu0.20.04.4_amd64.deb
+libbasicusageenvironment1_2020.01.19-1build1_amd64.deb   libsamplerate0_0.1.9-2_amd64.deb
+libblkid1_2.34-0.1ubuntu9.3_amd64.deb                    libsdl1.2debian_1.2.15+dfsg2-5_amd64.deb
+libbluray2_1%3a1.2.0-1_amd64.deb                         libsdl-image1.2_1.2.12-12_amd64.deb
+libbsd0_0.10.0-1_amd64.deb                               libselinux1_3.0-1build2_amd64.deb
+libbz2-1.0_1.0.8-2_amd64.deb                             libsensors5_1%3a3.6.0-2ubuntu1_amd64.deb
+libcaca0_0.99.beta19-2.1ubuntu1.20.04.2_amd64.deb        libsensors-config_1%3a3.6.0-2ubuntu1_all.deb
+libcairo2_1.16.0-4ubuntu1_amd64.deb                      libshine3_3.1.1-2_amd64.deb
+libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb              libshout3_2.4.3-1_amd64.deb
+libcddb2_1.3.2-6fakesync1_amd64.deb                      libsidplay2_2.1.1-15ubuntu2_amd64.deb
+libchromaprint1_1.4.3-3build1_amd64.deb                  libslang2_2.3.2-4_amd64.deb
+libcodec2-0.9_0.9.2-2_amd64.deb                          libsm6_2%3a1.2.3-1_amd64.deb
+libcom-err2_1.45.5-2ubuntu1.1_amd64.deb                  libsnappy1v5_1.1.8-1build1_amd64.deb
+libcrypt1_1%3a4.4.10-10ubuntu4_amd64.deb                 libsndfile1_1.0.28-7ubuntu0.2_amd64.deb
+libdatrie1_0.2.12-3_amd64.deb                            libsndio7.0_1.5.0-3_amd64.deb
+libdbus-1-3_1.12.16-2ubuntu2.3_amd64.deb                 libsoxr0_0.1.3-2build1_amd64.deb
+libdc1394-22_2.2.5-2.1_amd64.deb                         libspatialaudio0_0.3.0+git20180730+dfsg1-2build1_amd64.deb
+libdca0_0.0.6-1_amd64.deb                                libspeex1_1.2~rc1.2-1.1ubuntu1.20.04.1_amd64.deb
+libdouble-conversion3_3.1.5-4ubuntu1_amd64.deb           libspeexdsp1_1.2~rc1.2-1.1ubuntu1.20.04.1_amd64.deb
+libdrm2_2.4.107-8ubuntu1~20.04.2_amd64.deb               libsrt1_1.4.0-1build1_amd64.deb
+libdrm-amdgpu1_2.4.107-8ubuntu1~20.04.2_amd64.deb        libssh2-1_1.8.0-2.1ubuntu0.1_amd64.deb
+libdrm-common_2.4.107-8ubuntu1~20.04.2_all.deb           libssh-gcrypt-4_0.9.3-2ubuntu2.5_amd64.deb
+libdrm-intel1_2.4.107-8ubuntu1~20.04.2_amd64.deb         libssl1.1_1.1.1f-1ubuntu2.22_amd64.deb
+libdrm-nouveau2_2.4.107-8ubuntu1~20.04.2_amd64.deb       libstdc++6_10.5.0-1ubuntu1~20.04_amd64.deb
+libdrm-radeon1_2.4.107-8ubuntu1~20.04.2_amd64.deb        libswresample3_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libdvbpsi10_1.3.3-1_amd64.deb                            libswscale5_7%3a4.2.7-0ubuntu0.1_amd64.deb
+libdvdnav4_6.0.1-1build1_amd64.deb                       libsystemd0_245.4-4ubuntu3.20_amd64.deb
+libdvdread7_6.1.0+really6.0.2-1_amd64.deb                libtag1v5_1.11.1+dfsg.1-0.3ubuntu2_amd64.deb
+libebml4v5_1.3.10-1build1_amd64.deb                      libtag1v5-vanilla_1.11.1+dfsg.1-0.3ubuntu2_amd64.deb
+libedit2_3.1-20191231-1_amd64.deb                        libtasn1-6_4.16.0-2_amd64.deb
+libegl1_1.3.2-1~ubuntu0.20.04.2_amd64.deb                libthai0_0.1.28-3_amd64.deb
+libegl-mesa0_21.2.6-0ubuntu0.1~20.04.2_amd64.deb         libthai-data_0.1.28-3_all.deb
+libelf1_0.176-1.1ubuntu0.1_amd64.deb                     libtheora0_1.1.1+dfsg.1-15ubuntu2_amd64.deb
+libevdev2_1.9.0+dfsg-1ubuntu0.2_amd64.deb                libtiff5_4.1.0+git191117-2ubuntu0.20.04.12_amd64.deb
+libexpat1_2.2.9-1ubuntu0.6_amd64.deb                     libtinfo6_6.2-0ubuntu2.1_amd64.deb
+libfaad2_2.9.1-1ubuntu0.1_amd64.deb                      libtwolame0_0.4.0-2_amd64.deb
+libffi7_3.3-4_amd64.deb                                  libunistring2_0.9.10-2_amd64.deb
+libflac8_1.3.3-1ubuntu0.2_amd64.deb                      libupnp13_1%3a1.8.4-2ubuntu2_amd64.deb
+libfontconfig1_2.13.1-2ubuntu3_amd64.deb                 libusageenvironment3_2020.01.19-1build1_amd64.deb
+libfreetype6_2.10.1-2ubuntu0.3_amd64.deb                 libusb-1.0-0_2%3a1.0.23-2build1_amd64.deb
+libfribidi0_1.0.8-2ubuntu0.1_amd64.deb                   libuuid1_2.34-0.1ubuntu9.3_amd64.deb
+libgbm1_21.2.6-0ubuntu0.1~20.04.2_amd64.deb              libva2_2.7.0-2_amd64.deb
+libgcc1_1%3a10.5.0-1ubuntu1~20.04_amd64.deb              libva-drm2_2.7.0-2_amd64.deb
+libgcc-s1_10.5.0-1ubuntu1~20.04_amd64.deb                libva-wayland2_2.7.0-2_amd64.deb
+libgcrypt20_1.8.5-5ubuntu1.1_amd64.deb                   libva-x11-2_2.7.0-2_amd64.deb
+libgdk-pixbuf2.0-0_2.40.0+dfsg-3ubuntu0.4_amd64.deb      libvdpau1_1.3-1ubuntu2_amd64.deb
+libgdk-pixbuf2.0-common_2.40.0+dfsg-3ubuntu0.4_all.deb   libvlc5_3.0.9.2-1_amd64.deb
+libgl1_1.3.2-1~ubuntu0.20.04.2_amd64.deb                 libvlc-bin_3.0.9.2-1_amd64.deb
+libgl1-mesa-dri_21.2.6-0ubuntu0.1~20.04.2_amd64.deb      libvlccore9_3.0.9.2-1_amd64.deb
+libglapi-mesa_21.2.6-0ubuntu0.1~20.04.2_amd64.deb        libvorbis0a_1.3.6-2ubuntu1_amd64.deb
+libgles2_1.3.2-1~ubuntu0.20.04.2_amd64.deb               libvorbisenc2_1.3.6-2ubuntu1_amd64.deb
+libglib2.0-0_2.64.6-1~ubuntu20.04.6_amd64.deb            libvorbisfile3_1.3.6-2ubuntu1_amd64.deb
+libglvnd0_1.3.2-1~ubuntu0.20.04.2_amd64.deb              libvpx6_1.8.2-1ubuntu0.2_amd64.deb
+libglx0_1.3.2-1~ubuntu0.20.04.2_amd64.deb                libvulkan1_1.2.131.2-1_amd64.deb
+libglx-mesa0_21.2.6-0ubuntu0.1~20.04.2_amd64.deb         libwavpack1_5.2.0-1ubuntu0.1_amd64.deb
+libgme0_0.6.2-1build1_amd64.deb                          libwayland-client0_1.18.0-1ubuntu0.1_amd64.deb
+libgmp10_2%3a6.2.0+dfsg-4ubuntu0.1_amd64.deb             libwayland-egl1_1.18.0-1ubuntu0.1_amd64.deb
+libgnutls30_3.6.13-2ubuntu1.10_amd64.deb                 libwayland-server0_1.18.0-1ubuntu0.1_amd64.deb
+libgomp1_10.5.0-1ubuntu1~20.04_amd64.deb                 libwebp6_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgpg-error0_1.37-1_amd64.deb                           libwebpmux3_0.6.1-2ubuntu0.20.04.3_amd64.deb
+libgpm2_1.20.7-5_amd64.deb                               libwrap0_7.6.q-30_amd64.deb
+libgraphite2-3_1.3.13-11build1_amd64.deb                 libx11-6_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libgroupsock8_2020.01.19-1build1_amd64.deb               libx11-data_2%3a1.6.9-2ubuntu1.6_all.deb
+libgsm1_1.0.18-2_amd64.deb                               libx11-xcb1_2%3a1.6.9-2ubuntu1.6_amd64.deb
+libgssapi-krb5-2_1.17-6ubuntu4.4_amd64.deb               libx264-155_2%3a0.155.2917+git0a84d98-2_amd64.deb
+libgudev-1.0-0_1%3a233-1_amd64.deb                       libx265-179_3.2.1-1build1_amd64.deb
+libharfbuzz0b_2.6.4-1ubuntu4.2_amd64.deb                 libxau6_1%3a1.0.9-0ubuntu1_amd64.deb
+libhogweed5_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb       libxcb1_1.14-2_amd64.deb
+libice6_2%3a1.0.10-0ubuntu1_amd64.deb                    libxcb-dri2-0_1.14-2_amd64.deb
+libicu66_66.1-2ubuntu2.1_amd64.deb                       libxcb-dri3-0_1.14-2_amd64.deb
+libidn11_1.33-2.2ubuntu2_amd64.deb                       libxcb-glx0_1.14-2_amd64.deb
+libidn2-0_2.2.0-2_amd64.deb                              libxcb-icccm4_0.4.1-1.1_amd64.deb
+libinput10_1.15.5-1ubuntu0.3_amd64.deb                   libxcb-image0_0.4.0-1build1_amd64.deb
+libinput-bin_1.15.5-1ubuntu0.3_amd64.deb                 libxcb-keysyms1_0.4.0-1build1_amd64.deb
+libixml10_1%3a1.8.4-2ubuntu2_amd64.deb                   libxcb-present0_1.14-2_amd64.deb
+libjbig0_2.1-3.1ubuntu0.20.04.1_amd64.deb                libxcb-randr0_1.14-2_amd64.deb
+libjpeg8_8c-2ubuntu8_amd64.deb                           libxcb-render0_1.14-2_amd64.deb
+libjpeg-turbo8_2.0.3-0ubuntu1.20.04.3_amd64.deb          libxcb-render-util0_0.3.9-1build1_amd64.deb
+libk5crypto3_1.17-6ubuntu4.4_amd64.deb                   libxcb-shape0_1.14-2_amd64.deb
+libkate1_0.4.1-11build1_amd64.deb                        libxcb-shm0_1.14-2_amd64.deb
+libkeyutils1_1.6-6ubuntu1_amd64.deb                      libxcb-sync1_1.14-2_amd64.deb
+libkrb5-3_1.17-6ubuntu4.4_amd64.deb                      libxcb-util1_0.4.0-0ubuntu3_amd64.deb
+libkrb5support0_1.17-6ubuntu4.4_amd64.deb                libxcb-xfixes0_1.14-2_amd64.deb
+liblcms2-2_2.9-4_amd64.deb                               libxcb-xinerama0_1.14-2_amd64.deb
+liblirc-client0_0.10.1-6.1_amd64.deb                     libxcb-xinput0_1.14-2_amd64.deb
+liblivemedia77_2020.01.19-1build1_amd64.deb              libxcb-xkb1_1.14-2_amd64.deb
+libllvm12_1%3a12.0.0-3ubuntu1~20.04.5_amd64.deb          libxcb-xv0_1.14-2_amd64.deb
+liblua5.2-0_5.2.4-1.1build3_amd64.deb                    libxdmcp6_1%3a1.1.3-0ubuntu1_amd64.deb
+liblz4-1_1.9.2-2ubuntu0.20.04.1_amd64.deb                libxext6_2%3a1.3.4-0ubuntu1_amd64.deb
+liblzma5_5.2.4-1ubuntu1.1_amd64.deb                      libxfixes3_1%3a5.0.3-2_amd64.deb
+libmad0_0.15.1b-10ubuntu1_amd64.deb                      libxkbcommon0_0.10.0-1_amd64.deb
+libmatroska6v5_1.5.2-3build1_amd64.deb                   libxkbcommon-x11-0_0.10.0-1_amd64.deb
+libmount1_2.34-0.1ubuntu9.3_amd64.deb                    libxml2_2.9.10+dfsg-5ubuntu0.20.04.7_amd64.deb
+libmp3lame0_3.100-3_amd64.deb                            libxrender1_1%3a0.9.10-1_amd64.deb
+libmpcdec6_2%3a0.1~r495-2_amd64.deb                      libxshmfence1_1.3-1_amd64.deb
+libmpeg2-4_0.5.1-9_amd64.deb                             libxvidcore4_2%3a1.3.7-1_amd64.deb
+libmpg123-0_1.25.13-1_amd64.deb                          libxxf86vm1_1%3a1.1.4-1build1_amd64.deb
+libmtdev1_1.1.5-1.1_amd64.deb                            libzstd1_1.4.4+dfsg-3ubuntu0.1_amd64.deb
+libmtp9_1.1.17-3_amd64.deb                               libzvbi0_0.2.35-17_amd64.deb
+libmtp-common_1.1.17-3_all.deb                           libzvbi-common_0.2.35-17_all.deb
+libmysofa1_1.0~dfsg0-1_amd64.deb                         lsb-base_11.1.0ubuntu2_all.deb
+libncurses6_6.2-0ubuntu2.1_amd64.deb                     ocl-icd-libopencl1_2.2.11-1ubuntu1_amd64.deb
+libncursesw6_6.2-0ubuntu2.1_amd64.deb                    perl-base_5.30.0-9ubuntu0.5_amd64.deb
+libnettle7_3.5.1+really3.5.1-2ubuntu0.2_amd64.deb        shared-mime-info_1.15-1_amd64.deb
+libnfs13_4.0.0-1_amd64.deb                               ttf-bitstream-vera_1.10-8_all.deb
+libnuma1_2.0.12-1_amd64.deb                              tzdata_2024a-0ubuntu0.20.04_all.deb
+libogg0_1.3.4-0ubuntu1_amd64.deb                         vlc_3.0.9.2-1_amd64.deb
+libopenjp2-7_2.3.1-1ubuntu4.20.04.1_amd64.deb            vlc-bin_3.0.9.2-1_amd64.deb
+libopenmpt0_0.4.11-1build1_amd64.deb                     vlc-data_3.0.9.2-1_all.deb
+libopenmpt-modplug1_0.4.11-1build1_amd64.deb             vlc-plugin-base_3.0.9.2-1_amd64.deb
+libopus0_1.3.1-0ubuntu1_amd64.deb                        vlc-plugin-qt_3.0.9.2-1_amd64.deb
+libp11-kit0_0.23.20-1ubuntu0.1_amd64.deb                 vlc-plugin-video-output_3.0.9.2-1_amd64.deb
+libpango-1.0-0_1.44.7-2ubuntu4_amd64.deb                 x11-common_1%3a7.7+19ubuntu14_all.deb
+libpangocairo-1.0-0_1.44.7-2ubuntu4_amd64.deb            xkb-data_2.29-2_all.deb
+
+./rtlib:
+linux
+
+./rtlib/linux:
+gcc32  TODO_DisableGestureIfNeeded.txt  TODO_powersetScriptIfNeeded.txt
+
+./rtlib/linux/gcc32:
+lib  plugins
+
+./rtlib/linux/gcc32/lib:
+libpcre2-16.so.0                         libQt5Network.so.5                     libQt5Quick3DUtils.so.5           libQt5SerialPort.so.5
+libqhttpserver.so                        libQt5Network.so.5.15.12               libQt5Quick3DUtils.so.5.15.12     libQt5SerialPort.so.5.15.12
+libqhttpserver.so.0                      libQt5Nfc.so                           libQt5QuickControls2.so           libQt5Sql.so
+libqhttpserver.so.0.1                    libQt5Nfc.so.5                         libQt5QuickControls2.so.5         libQt5Sql.so.5
+libqhttpserver.so.0.1.0                  libQt5Nfc.so.5.15.12                   libQt5QuickControls2.so.5.15.12   libQt5Sql.so.5.15.12
+libQt5Bluetooth.so                       libQt5OpenGL.so                        libQt5QuickParticles.so           libQt5Svg.so
+libQt5Bluetooth.so.5                     libQt5OpenGL.so.5                      libQt5QuickParticles.so.5         libQt5Svg.so.5
+libQt5Bluetooth.so.5.15.12               libQt5OpenGL.so.5.15.12                libQt5QuickParticles.so.5.15.12   libQt5Svg.so.5.15.12
+libQt5Bodymovin.so                       libQt5PrintSupport.so                  libQt5QuickShapes.so              libQt5Test.so
+libQt5Bodymovin.so.5                     libQt5PrintSupport.so.5                libQt5QuickShapes.so.5            libQt5Test.so.5
+libQt5Bodymovin.so.5.15.12               libQt5PrintSupport.so.5.15.12          libQt5QuickShapes.so.5.15.12      libQt5Test.so.5.15.12
+libQt5Concurrent.so                      libQt5Purchasing.so                    libQt5Quick.so                    libQt5WebChannel.so
+libQt5Concurrent.so.5                    libQt5Purchasing.so.5                  libQt5Quick.so.5                  libQt5WebChannel.so.5
+libQt5Concurrent.so.5.15.12              libQt5Purchasing.so.5.15.12            libQt5Quick.so.5.15.12            libQt5WebChannel.so.5.15.12
+libQt5Core.so                            libQt5QmlModels.so                     libQt5QuickTemplates2.so          libQt5WebSockets.so
+libQt5Core.so.5                          libQt5QmlModels.so.5                   libQt5QuickTemplates2.so.5        libQt5WebSockets.so.5
+libQt5Core.so.5.15.12                    libQt5QmlModels.so.5.15.12             libQt5QuickTemplates2.so.5.15.12  libQt5WebSockets.so.5.15.12
+libQt5DBus.so                            libQt5Qml.so                           libQt5QuickTest.so                libQt5Widgets.so
+libQt5DBus.so.5                          libQt5Qml.so.5                         libQt5QuickTest.so.5              libQt5Widgets.so.5
+libQt5DBus.so.5.15.12                    libQt5Qml.so.5.15.12                   libQt5QuickTest.so.5.15.12        libQt5Widgets.so.5.15.12
+libQt5EglFSDeviceIntegration.so          libQt5QmlWorkerScript.so               libQt5QuickWidgets.so             libQt5X11Extras.so
+libQt5EglFSDeviceIntegration.so.5        libQt5QmlWorkerScript.so.5             libQt5QuickWidgets.so.5           libQt5X11Extras.so.5
+libQt5EglFSDeviceIntegration.so.5.15.12  libQt5QmlWorkerScript.so.5.15.12       libQt5QuickWidgets.so.5.15.12     libQt5X11Extras.so.5.15.12
+libQt5EglFsKmsSupport.so                 libQt5Quick3DAssetImport.so            libQt5RemoteObjects.so            libQt5XcbQpa.so
+libQt5EglFsKmsSupport.so.5               libQt5Quick3DAssetImport.so.5          libQt5RemoteObjects.so.5          libQt5XcbQpa.so.5
+libQt5EglFsKmsSupport.so.5.15.12         libQt5Quick3DAssetImport.so.5.15.12    libQt5RemoteObjects.so.5.15.12    libQt5XcbQpa.so.5.15.12
+libQt5Gamepad.so                         libQt5Quick3DRender.so                 libQt5Scxml.so                    libQt5Xml.so
+libQt5Gamepad.so.5                       libQt5Quick3DRender.so.5               libQt5Scxml.so.5                  libQt5Xml.so.5
+libQt5Gamepad.so.5.15.12                 libQt5Quick3DRender.so.5.15.12         libQt5Scxml.so.5.15.12            libQt5Xml.so.5.15.12
+libQt5Gui.so                             libQt5Quick3DRuntimeRender.so          libQt5Sensors.so                  libquazip.so
+libQt5Gui.so.5                           libQt5Quick3DRuntimeRender.so.5        libQt5Sensors.so.5                libquazip.so.1
+libQt5Gui.so.5.15.12                     libQt5Quick3DRuntimeRender.so.5.15.12  libQt5Sensors.so.5.15.12          libquazip.so.1.0
+libQt5NetworkAuth.so                     libQt5Quick3D.so                       libQt5SerialBus.so                libquazip.so.1.0.0
+libQt5NetworkAuth.so.5                   libQt5Quick3D.so.5                     libQt5SerialBus.so.5              libxcb-cursor.so.0
+libQt5NetworkAuth.so.5.15.12             libQt5Quick3D.so.5.15.12               libQt5SerialBus.so.5.15.12        libxcb-xinerama.so.0
+libQt5Network.so                         libQt5Quick3DUtils.so                  libQt5SerialPort.so
+
+./rtlib/linux/gcc32/plugins:
+assetimporters  egldeviceintegrations  iconengines            platforms       qmltooling      sqldrivers
+bearer          gamepads               imageformats           platformthemes  sensorgestures  xcbglintegrations
+canbus          generic                platforminputcontexts  printsupport    sensors
+
+./rtlib/linux/gcc32/plugins/assetimporters:
+libassimp.so  libuip.so
+
+./rtlib/linux/gcc32/plugins/bearer:
+libqconnmanbearer.so  libqgenericbearer.so  libqnmbearer.so
+
+./rtlib/linux/gcc32/plugins/canbus:
+libqtpassthrucanbus.so  libqtpeakcanbus.so  libqtsocketcanbus.so  libqttinycanbus.so  libqtvirtualcanbus.so
+
+./rtlib/linux/gcc32/plugins/egldeviceintegrations:
+libqeglfs-emu-integration.so  libqeglfs-kms-egldevice-integration.so  libqeglfs-x11-integration.so
+
+./rtlib/linux/gcc32/plugins/gamepads:
+libevdevgamepad.so
+
+./rtlib/linux/gcc32/plugins/generic:
+libqevdevkeyboardplugin.so  libqevdevmouseplugin.so  libqevdevtabletplugin.so  libqevdevtouchplugin.so  libqtuiotouchplugin.so
+
+./rtlib/linux/gcc32/plugins/iconengines:
+libqsvgicon.so
+
+./rtlib/linux/gcc32/plugins/imageformats:
+libqgif.so  libqicns.so  libqico.so  libqjpeg.so  libqsvg.so  libqtga.so  libqtiff.so  libqwbmp.so  libqwebp.so
+
+./rtlib/linux/gcc32/plugins/platforminputcontexts:
+libcomposeplatforminputcontextplugin.so  libibusplatforminputcontextplugin.so
+
+./rtlib/linux/gcc32/plugins/platforms:
+libqeglfs.so  libqlinuxfb.so  libqminimalegl.so  libqminimal.so  libqoffscreen.so  libqvnc.so  libqwebgl.so  libqxcb.so
+
+./rtlib/linux/gcc32/plugins/platformthemes:
+libqxdgdesktopportal.so
+
+./rtlib/linux/gcc32/plugins/printsupport:
+libcupsprintersupport.so
+
+./rtlib/linux/gcc32/plugins/qmltooling:
+libqmldbg_debugger.so   libqmldbg_local.so     libqmldbg_nativedebugger.so  libqmldbg_preview.so   libqmldbg_quickprofiler.so  libqmldbg_tcp.so
+libqmldbg_inspector.so  libqmldbg_messages.so  libqmldbg_native.so          libqmldbg_profiler.so  libqmldbg_server.so
+
+./rtlib/linux/gcc32/plugins/sensorgestures:
+libqtsensorgestures_plugin.so  libqtsensorgestures_shakeplugin.so
+
+./rtlib/linux/gcc32/plugins/sensors:
+libqtsensors_generic.so  libqtsensors_iio-sensor-proxy.so  libqtsensors_linuxsys.so
+
+./rtlib/linux/gcc32/plugins/sqldrivers:
+libqsqlite.so
+
+./rtlib/linux/gcc32/plugins/xcbglintegrations:
+libqxcb-egl-integration.so  libqxcb-glx-integration.so
+
+./Tools:
+7za  ffmpeg  xvkbd
+
+./Tools/ffmpeg:
+ffmpeg  ffprobe  GPLv3.txt  manpages  model  qt-faststart  readme.txt
+
+./Tools/ffmpeg/manpages:
+ffmpeg-all.txt                ffmpeg-codecs.txt   ffmpeg-filters.txt  ffmpeg-protocols.txt  ffmpeg-scaler.txt  ffmpeg-utils.txt
+ffmpeg-bitstream-filters.txt  ffmpeg-devices.txt  ffmpeg-formats.txt  ffmpeg-resampler.txt  ffmpeg.txt         ffprobe.txt
+
+./Tools/ffmpeg/model:
+000-PLEASE-README.TXT  vmaf_b_v0.6.3.json         vmaf_float_v0.6.1.json          vmaf_float_v0.6.1.pkl        vmaf_v0.6.1.json
+other_models           vmaf_float_4k_v0.6.1.json  vmaf_float_v0.6.1neg.json       vmaf_float_v0.6.1.pkl.model  vmaf_v0.6.1neg.json
+vmaf_4k_rb_v0.6.2      vmaf_float_b_v0.6.3        vmaf_float_v0.6.1neg.pkl        vmaf_rb_v0.6.2
+vmaf_4k_v0.6.1.json    vmaf_float_b_v0.6.3.json   vmaf_float_v0.6.1neg.pkl.model  vmaf_rb_v0.6.3
+
+./Tools/ffmpeg/model/other_models:
+model_V8a.model                            nflxall_vmafv3.pkl.model                     nflxtrain_vmafv2.pkl         nflx_vmaff_rf_v2.pkl
+nflxall_libsvmnusvr_currentbest.pkl        nflxall_vmafv4.pkl                           nflxtrain_vmafv2.pkl.model   niqe_v0.1.pkl
+nflxall_libsvmnusvr_currentbest.pkl.model  nflxall_vmafv4.pkl.model                     nflxtrain_vmafv3a.pkl        vmaf_4k_v0.6.1rc.pkl
+nflxall_vmafv1.pkl                         nflxtrain_libsvmnusvr_currentbest.pkl        nflxtrain_vmafv3a.pkl.model  vmaf_4k_v0.6.1rc.pkl.model
+nflxall_vmafv1.pkl.model                   nflxtrain_libsvmnusvr_currentbest.pkl.model  nflxtrain_vmafv3.pkl         vmaf_v0.6.0.json
+nflxall_vmafv2.pkl                         nflxtrain_norm_type_none.json                nflxtrain_vmafv3.pkl.model   vmaf_v0.6.0.pkl
+nflxall_vmafv2.pkl.model                   nflxtrain_norm_type_none.pkl                 nflx_v1.json                 vmaf_v0.6.0.pkl.model
+nflxall_vmafv3a.pkl                        nflxtrain_norm_type_none.pkl.model           nflx_v1.pkl                  vmaf_v0.6.1mfz.json
+nflxall_vmafv3a.pkl.model                  nflxtrain_vmafv1.pkl                         nflx_v1.pkl.model
+nflxall_vmafv3.pkl                         nflxtrain_vmafv1.pkl.model                   nflx_vmaff_rf_v1.pkl
+
+./Tools/ffmpeg/model/vmaf_4k_rb_v0.6.2:
+vmaf_4k_rb_v0.6.2.json            vmaf_4k_rb_v0.6.2.pkl.0005.model  vmaf_4k_rb_v0.6.2.pkl.0011        vmaf_4k_rb_v0.6.2.pkl.0016.model
+vmaf_4k_rb_v0.6.2.pkl             vmaf_4k_rb_v0.6.2.pkl.0006        vmaf_4k_rb_v0.6.2.pkl.0011.model  vmaf_4k_rb_v0.6.2.pkl.0017
+vmaf_4k_rb_v0.6.2.pkl.0001        vmaf_4k_rb_v0.6.2.pkl.0006.model  vmaf_4k_rb_v0.6.2.pkl.0012        vmaf_4k_rb_v0.6.2.pkl.0017.model
+vmaf_4k_rb_v0.6.2.pkl.0001.model  vmaf_4k_rb_v0.6.2.pkl.0007        vmaf_4k_rb_v0.6.2.pkl.0012.model  vmaf_4k_rb_v0.6.2.pkl.0018
+vmaf_4k_rb_v0.6.2.pkl.0002        vmaf_4k_rb_v0.6.2.pkl.0007.model  vmaf_4k_rb_v0.6.2.pkl.0013        vmaf_4k_rb_v0.6.2.pkl.0018.model
+vmaf_4k_rb_v0.6.2.pkl.0002.model  vmaf_4k_rb_v0.6.2.pkl.0008        vmaf_4k_rb_v0.6.2.pkl.0013.model  vmaf_4k_rb_v0.6.2.pkl.0019
+vmaf_4k_rb_v0.6.2.pkl.0003        vmaf_4k_rb_v0.6.2.pkl.0008.model  vmaf_4k_rb_v0.6.2.pkl.0014        vmaf_4k_rb_v0.6.2.pkl.0019.model
+vmaf_4k_rb_v0.6.2.pkl.0003.model  vmaf_4k_rb_v0.6.2.pkl.0009        vmaf_4k_rb_v0.6.2.pkl.0014.model  vmaf_4k_rb_v0.6.2.pkl.model
+vmaf_4k_rb_v0.6.2.pkl.0004        vmaf_4k_rb_v0.6.2.pkl.0009.model  vmaf_4k_rb_v0.6.2.pkl.0015
+vmaf_4k_rb_v0.6.2.pkl.0004.model  vmaf_4k_rb_v0.6.2.pkl.0010        vmaf_4k_rb_v0.6.2.pkl.0015.model
+vmaf_4k_rb_v0.6.2.pkl.0005        vmaf_4k_rb_v0.6.2.pkl.0010.model  vmaf_4k_rb_v0.6.2.pkl.0016
+
+./Tools/ffmpeg/model/vmaf_float_b_v0.6.3:
+vmaf_float_b_v0.6.3.json            vmaf_float_b_v0.6.3.pkl.0005.model  vmaf_float_b_v0.6.3.pkl.0011        vmaf_float_b_v0.6.3.pkl.0016.model
+vmaf_float_b_v0.6.3.pkl             vmaf_float_b_v0.6.3.pkl.0006        vmaf_float_b_v0.6.3.pkl.0011.model  vmaf_float_b_v0.6.3.pkl.0017
+vmaf_float_b_v0.6.3.pkl.0001        vmaf_float_b_v0.6.3.pkl.0006.model  vmaf_float_b_v0.6.3.pkl.0012        vmaf_float_b_v0.6.3.pkl.0017.model
+vmaf_float_b_v0.6.3.pkl.0001.model  vmaf_float_b_v0.6.3.pkl.0007        vmaf_float_b_v0.6.3.pkl.0012.model  vmaf_float_b_v0.6.3.pkl.0018
+vmaf_float_b_v0.6.3.pkl.0002        vmaf_float_b_v0.6.3.pkl.0007.model  vmaf_float_b_v0.6.3.pkl.0013        vmaf_float_b_v0.6.3.pkl.0018.model
+vmaf_float_b_v0.6.3.pkl.0002.model  vmaf_float_b_v0.6.3.pkl.0008        vmaf_float_b_v0.6.3.pkl.0013.model  vmaf_float_b_v0.6.3.pkl.0019
+vmaf_float_b_v0.6.3.pkl.0003        vmaf_float_b_v0.6.3.pkl.0008.model  vmaf_float_b_v0.6.3.pkl.0014        vmaf_float_b_v0.6.3.pkl.0019.model
+vmaf_float_b_v0.6.3.pkl.0003.model  vmaf_float_b_v0.6.3.pkl.0009        vmaf_float_b_v0.6.3.pkl.0014.model  vmaf_float_b_v0.6.3.pkl.0020
+vmaf_float_b_v0.6.3.pkl.0004        vmaf_float_b_v0.6.3.pkl.0009.model  vmaf_float_b_v0.6.3.pkl.0015        vmaf_float_b_v0.6.3.pkl.0020.model
+vmaf_float_b_v0.6.3.pkl.0004.model  vmaf_float_b_v0.6.3.pkl.0010        vmaf_float_b_v0.6.3.pkl.0015.model  vmaf_float_b_v0.6.3.pkl.model
+vmaf_float_b_v0.6.3.pkl.0005        vmaf_float_b_v0.6.3.pkl.0010.model  vmaf_float_b_v0.6.3.pkl.0016
+
+./Tools/ffmpeg/model/vmaf_rb_v0.6.2:
+vmaf_rb_v0.6.2.json            vmaf_rb_v0.6.2.pkl.0005.model  vmaf_rb_v0.6.2.pkl.0011        vmaf_rb_v0.6.2.pkl.0016.model
+vmaf_rb_v0.6.2.pkl             vmaf_rb_v0.6.2.pkl.0006        vmaf_rb_v0.6.2.pkl.0011.model  vmaf_rb_v0.6.2.pkl.0017
+vmaf_rb_v0.6.2.pkl.0001        vmaf_rb_v0.6.2.pkl.0006.model  vmaf_rb_v0.6.2.pkl.0012        vmaf_rb_v0.6.2.pkl.0017.model
+vmaf_rb_v0.6.2.pkl.0001.model  vmaf_rb_v0.6.2.pkl.0007        vmaf_rb_v0.6.2.pkl.0012.model  vmaf_rb_v0.6.2.pkl.0018
+vmaf_rb_v0.6.2.pkl.0002        vmaf_rb_v0.6.2.pkl.0007.model  vmaf_rb_v0.6.2.pkl.0013        vmaf_rb_v0.6.2.pkl.0018.model
+vmaf_rb_v0.6.2.pkl.0002.model  vmaf_rb_v0.6.2.pkl.0008        vmaf_rb_v0.6.2.pkl.0013.model  vmaf_rb_v0.6.2.pkl.0019
+vmaf_rb_v0.6.2.pkl.0003        vmaf_rb_v0.6.2.pkl.0008.model  vmaf_rb_v0.6.2.pkl.0014        vmaf_rb_v0.6.2.pkl.0019.model
+vmaf_rb_v0.6.2.pkl.0003.model  vmaf_rb_v0.6.2.pkl.0009        vmaf_rb_v0.6.2.pkl.0014.model  vmaf_rb_v0.6.2.pkl.model
+vmaf_rb_v0.6.2.pkl.0004        vmaf_rb_v0.6.2.pkl.0009.model  vmaf_rb_v0.6.2.pkl.0015
+vmaf_rb_v0.6.2.pkl.0004.model  vmaf_rb_v0.6.2.pkl.0010        vmaf_rb_v0.6.2.pkl.0015.model
+vmaf_rb_v0.6.2.pkl.0005        vmaf_rb_v0.6.2.pkl.0010.model  vmaf_rb_v0.6.2.pkl.0016
+
+./Tools/ffmpeg/model/vmaf_rb_v0.6.3:
+vmaf_rb_v0.6.3.json            vmaf_rb_v0.6.3.pkl.0005.model  vmaf_rb_v0.6.3.pkl.0011        vmaf_rb_v0.6.3.pkl.0016.model
+vmaf_rb_v0.6.3.pkl             vmaf_rb_v0.6.3.pkl.0006        vmaf_rb_v0.6.3.pkl.0011.model  vmaf_rb_v0.6.3.pkl.0017
+vmaf_rb_v0.6.3.pkl.0001        vmaf_rb_v0.6.3.pkl.0006.model  vmaf_rb_v0.6.3.pkl.0012        vmaf_rb_v0.6.3.pkl.0017.model
+vmaf_rb_v0.6.3.pkl.0001.model  vmaf_rb_v0.6.3.pkl.0007        vmaf_rb_v0.6.3.pkl.0012.model  vmaf_rb_v0.6.3.pkl.0018
+vmaf_rb_v0.6.3.pkl.0002        vmaf_rb_v0.6.3.pkl.0007.model  vmaf_rb_v0.6.3.pkl.0013        vmaf_rb_v0.6.3.pkl.0018.model
+vmaf_rb_v0.6.3.pkl.0002.model  vmaf_rb_v0.6.3.pkl.0008        vmaf_rb_v0.6.3.pkl.0013.model  vmaf_rb_v0.6.3.pkl.0019
+vmaf_rb_v0.6.3.pkl.0003        vmaf_rb_v0.6.3.pkl.0008.model  vmaf_rb_v0.6.3.pkl.0014        vmaf_rb_v0.6.3.pkl.0019.model
+vmaf_rb_v0.6.3.pkl.0003.model  vmaf_rb_v0.6.3.pkl.0009        vmaf_rb_v0.6.3.pkl.0014.model  vmaf_rb_v0.6.3.pkl.0020
+vmaf_rb_v0.6.3.pkl.0004        vmaf_rb_v0.6.3.pkl.0009.model  vmaf_rb_v0.6.3.pkl.0015        vmaf_rb_v0.6.3.pkl.0020.model
+vmaf_rb_v0.6.3.pkl.0004.model  vmaf_rb_v0.6.3.pkl.0010        vmaf_rb_v0.6.3.pkl.0015.model  vmaf_rb_v0.6.3.pkl.model
+vmaf_rb_v0.6.3.pkl.0005        vmaf_rb_v0.6.3.pkl.0010.model  vmaf_rb_v0.6.3.pkl.0016
+
+./ViCom:
+qt.conf
+
+./ViDlder:
+qt.conf
+
+./ViPlayerA:
+qt.conf  vis.conf
+
+./ViPlayerB:
+qt.conf  vis.conf
+
+./ViPlayerNew:
+log  ViPlayerBin
+
+./ViPlayerNew/log:
+
+./ViPlayerNew/ViPlayerBin:
+base_library.zip                              libkrb5support.so.0                  libQt5XmlPatterns.so.5
+certifi                                       liblz4.so.1                          libquadmath-96973f99.so.0.0.0
+_cffi_backend.cpython-38-x86_64-linux-gnu.so  liblzma.so.5                         libre2.so.5
+cryptography                                  libminizip.so.1                      libreadline.so.8
+cryptography-2.8.egg-info                     libmount.so.1                        libselinux.so.1
+libapparmor.so.1                              libmpdec.so.2                        libsnappy.so.1
+libasyncns.so.0                               libmtdev.so.1                        libsndfile.so.1
+libatk-1.0.so.0                               libncursesw.so.6                     libsqlite3.so.0
+libatk-bridge-2.0.so.0                        libnettle.so.7                       libssl.so.1.1
+libatspi.so.0                                 libnspr4.so                          libstdc++.so.6
+libavahi-client.so.3                          libnss3.so                           libsystemd.so.0
+libavahi-common.so.3                          libnssutil3.so                       libtasn1.so.6
+libblkid.so.1                                 libogg.so.0                          libthai.so.0
+libbsd.so.0                                   libopenblas64_p-r0-15028c96.3.21.so  libtinfo.so.6
+libbz2.so.1.0                                 libopus.so.0                         libudev.so.1
+libcairo-gobject.so.2                         libp11-kit.so.0                      libunistring.so.2
+libcairo.so.2                                 libpango-1.0.so.0                    libuuid.so.1
+libcom_err.so.2                               libpangocairo-1.0.so.0               libvlccore.so.9
+libcrypto.so.1.1                              libpangoft2-1.0.so.0                 libvlc.so.5
+libcups.so.2                                  libpcre2-16.so.0                     libvorbisenc.so.2
+libdatrie.so.1                                libpcre2-8.so.0                      libvorbis.so.0
+libdbus-1.so.3                                libpcre.so.3                         libvpx.so.6
+libdouble-conversion.so.3                     libpixman-1.so.0                     libwacom.so.2
+lib-dynload                                   libplc4.so                           libwayland-client.so.0
+libepoxy.so.0                                 libplds4.so                          libwayland-cursor.so.0
+libevdev.so.2                                 libpng16.so.16                       libwayland-egl.so.1
+libevent-2.1.so.7                             libpulsecommon-13.99.so              libwebpdemux.so.2
+libexpat.so.1                                 libpulse-mainloop-glib.so.0          libwebpmux.so.3
+libffi.so.7                                   libpulse.so.0                        libwebp.so.6
+libFLAC.so.8                                  libpython3.8.so.1.0                  libwrap.so.0
+libfontconfig.so.1                            libQt5Bluetooth.so.5                 libX11.so.6
+libfreetype.so.6                              libQt5Concurrent.so.5                libX11-xcb.so.1
+libfribidi.so.0                               libQt5Core.so.5                      libXau.so.6
+libgcc_s.so.1                                 libQt5DBus.so.5                      libxcb-glx.so.0
+libgcrypt.so.20                               libQt5EglFSDeviceIntegration.so.5    libxcb-render.so.0
+libgdk-3.so.0                                 libQt5EglFsKmsSupport.so.5           libxcb-shm.so.0
+libgdk_pixbuf-2.0.so.0                        libQt5Gui.so.5                       libxcb-xkb.so.1
+libgfortran-040039e1.so.5.0.0                 libQt5Location.so.5                  libXcomposite.so.1
+libgio-2.0.so.0                               libQt5Multimedia.so.5                libXcursor.so.1
+libglib-2.0.so.0                              libQt5Network.so.5                   libXdamage.so.1
+libgmodule-2.0.so.0                           libQt5Nfc.so.5                       libXdmcp.so.6
+libgmp.so.10                                  libQt5PositioningQuick.so.5          libXext.so.6
+libgnutls.so.30                               libQt5Positioning.so.5               libXfixes.so.3
+libgobject-2.0.so.0                           libQt5PrintSupport.so.5              libXinerama.so.1
+libgpg-error.so.0                             libQt5Qml.so.5                       libXi.so.6
+libgraphite2.so.3                             libQt5QuickControls2.so.5            libxkbcommon.so.0
+libgssapi_krb5.so.2                           libQt5QuickParticles.so.5            libxkbcommon-x11.so.0
+libgthread-2.0.so.0                           libQt5QuickShapes.so.5               libxml2.so.2
+libgtk-3.so.0                                 libQt5Quick.so.5                     libXrandr.so.2
+libgudev-1.0.so.0                             libQt5QuickTemplates2.so.5           libXrender.so.1
+libharfbuzz.so.0                              libQt5QuickTest.so.5                 libxslt.so.1
+libhogweed.so.5                               libQt5QuickWidgets.so.5              libXss.so.1
+libicudata.so.56                              libQt5RemoteObjects.so.5             libz.so.1
+libicudata.so.66                              libQt5Sensors.so.5                   lxml
+libicui18n.so.56                              libQt5SerialPort.so.5                nss
+libicui18n.so.66                              libQt5Sql.so.5                       numpy
+libicuuc.so.56                                libQt5Svg.so.5                       psutil
+libicuuc.so.66                                libQt5Test.so.5                      PyQt5
+libidn2.so.0                                  libQt5WebChannel.so.5                setuptools-69.1.1.dist-info
+libidn.so.11                                  libQt5WebEngineCore.so.5             simplejson
+libinput.so.10                                libQt5WebEngine.so.5                 ViPlayerNew
+libjpeg.so.8                                  libQt5WebEngineWidgets.so.5          vlc
+libk5crypto.so.3                              libQt5WebSockets.so.5                wheel-0.42.0.dist-info
+libkeyutils.so.1                              libQt5Widgets.so.5
+libkrb5.so.3                                  libQt5XcbQpa.so.5
+
+./ViPlayerNew/ViPlayerBin/certifi:
+cacert.pem
+
+./ViPlayerNew/ViPlayerBin/cryptography:
+hazmat
+
+./ViPlayerNew/ViPlayerBin/cryptography/hazmat:
+bindings
+
+./ViPlayerNew/ViPlayerBin/cryptography/hazmat/bindings:
+_constant_time.abi3.so  _openssl.abi3.so
+
+./ViPlayerNew/ViPlayerBin/cryptography-2.8.egg-info:
+dependency_links.txt  not-zip-safe  PKG-INFO  requires.txt  top_level.txt
+
+./ViPlayerNew/ViPlayerBin/lib-dynload:
+_asyncio.cpython-38-x86_64-linux-gnu.so         _ctypes.cpython-38-x86_64-linux-gnu.so           _opcode.cpython-38-x86_64-linux-gnu.so
+_bz2.cpython-38-x86_64-linux-gnu.so             _curses.cpython-38-x86_64-linux-gnu.so           _posixshmem.cpython-38-x86_64-linux-gnu.so
+_codecs_cn.cpython-38-x86_64-linux-gnu.so       _decimal.cpython-38-x86_64-linux-gnu.so          _queue.cpython-38-x86_64-linux-gnu.so
+_codecs_hk.cpython-38-x86_64-linux-gnu.so       _hashlib.cpython-38-x86_64-linux-gnu.so          readline.cpython-38-x86_64-linux-gnu.so
+_codecs_iso2022.cpython-38-x86_64-linux-gnu.so  _json.cpython-38-x86_64-linux-gnu.so             resource.cpython-38-x86_64-linux-gnu.so
+_codecs_jp.cpython-38-x86_64-linux-gnu.so       _lzma.cpython-38-x86_64-linux-gnu.so             _ssl.cpython-38-x86_64-linux-gnu.so
+_codecs_kr.cpython-38-x86_64-linux-gnu.so       mmap.cpython-38-x86_64-linux-gnu.so              termios.cpython-38-x86_64-linux-gnu.so
+_codecs_tw.cpython-38-x86_64-linux-gnu.so       _multibytecodec.cpython-38-x86_64-linux-gnu.so
+_contextvars.cpython-38-x86_64-linux-gnu.so     _multiprocessing.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/lxml:
+builder.cpython-38-x86_64-linux-gnu.so       html                                      sax.cpython-38-x86_64-linux-gnu.so
+_elementpath.cpython-38-x86_64-linux-gnu.so  isoschematron
+etree.cpython-38-x86_64-linux-gnu.so         objectify.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/lxml/html:
+clean.cpython-38-x86_64-linux-gnu.so  diff.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/lxml/isoschematron:
+resources
+
+./ViPlayerNew/ViPlayerBin/lxml/isoschematron/resources:
+rng  xsl
+
+./ViPlayerNew/ViPlayerBin/lxml/isoschematron/resources/rng:
+iso-schematron.rng
+
+./ViPlayerNew/ViPlayerBin/lxml/isoschematron/resources/xsl:
+iso-schematron-xslt1  RNG2Schtrn.xsl  XSD2Schtrn.xsl
+
+./ViPlayerNew/ViPlayerBin/lxml/isoschematron/resources/xsl/iso-schematron-xslt1:
+iso_abstract_expand.xsl  iso_schematron_message.xsl             iso_svrl_for_xslt1.xsl
+iso_dsdl_include.xsl     iso_schematron_skeleton_for_xslt1.xsl  readme.txt
+
+./ViPlayerNew/ViPlayerBin/nss:
+libfreebl3.so  libfreeblpriv3.so  libnssckbi.so  libnssdbm3.so  libsoftokn3.so
+
+./ViPlayerNew/ViPlayerBin/numpy:
+core  fft  linalg  random
+
+./ViPlayerNew/ViPlayerBin/numpy/core:
+_multiarray_tests.cpython-38-x86_64-linux-gnu.so  _multiarray_umath.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/numpy/fft:
+_pocketfft_internal.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/numpy/linalg:
+lapack_lite.cpython-38-x86_64-linux-gnu.so  _umath_linalg.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/numpy/random:
+bit_generator.cpython-38-x86_64-linux-gnu.so      _generator.cpython-38-x86_64-linux-gnu.so  _pcg64.cpython-38-x86_64-linux-gnu.so
+_bounded_integers.cpython-38-x86_64-linux-gnu.so  _mt19937.cpython-38-x86_64-linux-gnu.so    _philox.cpython-38-x86_64-linux-gnu.so
+_common.cpython-38-x86_64-linux-gnu.so            mtrand.cpython-38-x86_64-linux-gnu.so      _sfc64.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/psutil:
+_psutil_linux.cpython-38-x86_64-linux-gnu.so  _psutil_posix.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5:
+Qt         QtGui.so      QtPositioning.so   QtQml.so    QtQuickWidgets.so  QtWebEngineCore.so     QtWidgets.so  uic
+QtCore.so  QtNetwork.so  QtPrintSupport.so  QtQuick.so  QtWebChannel.so    QtWebEngineWidgets.so  sip.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt:
+libexec  plugins  qml  resources  translations
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/libexec:
+qt.conf  QtWebEngineProcess
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins:
+bearer                 imageformats           platformthemes  wayland-decoration-client            xcbglintegrations
+egldeviceintegrations  platforminputcontexts  position        wayland-graphics-integration-client
+iconengines            platforms              printsupport    wayland-shell-integration
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/bearer:
+libqconnmanbearer.so  libqgenericbearer.so  libqnmbearer.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/egldeviceintegrations:
+libqeglfs-emu-integration.so  libqeglfs-kms-egldevice-integration.so  libqeglfs-x11-integration.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/iconengines:
+libqsvgicon.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/imageformats:
+libqgif.so  libqicns.so  libqico.so  libqjpeg.so  libqsvg.so  libqtga.so  libqtiff.so  libqwbmp.so  libqwebp.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/platforminputcontexts:
+libcomposeplatforminputcontextplugin.so  libibusplatforminputcontextplugin.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/platforms:
+libqeglfs.so    libqminimalegl.so  libqoffscreen.so  libqwayland-egl.so      libqwayland-xcomposite-egl.so  libqwebgl.so
+libqlinuxfb.so  libqminimal.so     libqvnc.so        libqwayland-generic.so  libqwayland-xcomposite-glx.so  libqxcb.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/platformthemes:
+libqgtk3.so  libqxdgdesktopportal.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/position:
+libqtposition_geoclue2.so  libqtposition_geoclue.so  libqtposition_positionpoll.so  libqtposition_serialnmea.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/printsupport:
+libcupsprintersupport.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/wayland-decoration-client:
+libbradient.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/wayland-graphics-integration-client:
+libdmabuf-server.so  libdrm-egl-server.so  libqt-plugin-wayland-egl.so  libshm-emulation-server.so  libxcomposite-egl.so  libxcomposite-glx.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/wayland-shell-integration:
+libivi-shell.so  libwl-shell.so  libxdg-shell.so  libxdg-shell-v5.so  libxdg-shell-v6.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/plugins/xcbglintegrations:
+libqxcb-egl-integration.so  libqxcb-glx-integration.so
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml:
+Qt           QtCanvas3D          QtLocation    QtNfc          QtQml    QtQuick.2  QtTest        QtWebEngine
+QtBluetooth  QtGraphicalEffects  QtMultimedia  QtPositioning  QtQuick  QtSensors  QtWebChannel  QtWebSockets
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt:
+labs  WebSockets
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs:
+calendar  folderlistmodel  location  platform  qmlmodels  settings  sharedimage  wavefrontmesh
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/calendar:
+DayOfWeekRow.qml   libqtlabscalendarplugin.so  MonthGrid.qmlc    qmldir                WeekNumberColumn.qmlc
+DayOfWeekRow.qmlc  MonthGrid.qml               plugins.qmltypes  WeekNumberColumn.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/folderlistmodel:
+libqmlfolderlistmodelplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/location:
+liblocationlabsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/platform:
+libqtlabsplatformplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/qmlmodels:
+liblabsmodelsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/settings:
+libqmlsettingsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/sharedimage:
+libsharedimageplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/labs/wavefrontmesh:
+libqmlwavefrontmeshplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/Qt/WebSockets:
+qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtBluetooth:
+libdeclarative_bluetooth.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtCanvas3D:
+libqtcanvas3d.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtGraphicalEffects:
+Blend.qml               Desaturate.qml       GammaAdjust.qml    LevelAdjust.qml                 plugins.qmltypes    RectangularGlow.qml
+BrightnessContrast.qml  DirectionalBlur.qml  GaussianBlur.qml   libqtgraphicaleffectsplugin.so  private             RecursiveBlur.qml
+Colorize.qml            Displace.qml         Glow.qml           LinearGradient.qml              qmldir              ThresholdMask.qml
+ColorOverlay.qml        DropShadow.qml       HueSaturation.qml  MaskedBlur.qml                  RadialBlur.qml      ZoomBlur.qml
+ConicalGradient.qml     FastBlur.qml         InnerShadow.qml    OpacityMask.qml                 RadialGradient.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtGraphicalEffects/private:
+DropShadowBase.qml   FastInnerShadow.qml   GaussianDirectionalBlur.qml   GaussianInnerShadow.qml   libqtgraphicaleffectsprivate.so
+DropShadowBase.qmlc  FastInnerShadow.qmlc  GaussianDirectionalBlur.qmlc  GaussianInnerShadow.qmlc  qmldir
+FastGlow.qml         FastMaskedBlur.qml    GaussianGlow.qml              GaussianMaskedBlur.qml
+FastGlow.qmlc        FastMaskedBlur.qmlc   GaussianGlow.qmlc             GaussianMaskedBlur.qmlc
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtLocation:
+libdeclarative_location.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtMultimedia:
+libdeclarative_multimedia.so  plugins.qmltypes  qmldir  Video.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtNfc:
+libdeclarative_nfc.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtPositioning:
+libdeclarative_positioning.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQml:
+Models.2  plugins.qmltypes  qmldir  RemoteObjects  StateMachine
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQml/Models.2:
+libmodelsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQml/RemoteObjects:
+libqtqmlremoteobjects.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQml/StateMachine:
+libqtqmlstatemachine.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick:
+Controls    Dialogs  Layouts       Particles.2     Scene2D  Shapes       Window.2
+Controls.2  Extras   LocalStorage  PrivateWidgets  Scene3D  Templates.2  XmlListModel
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls:
+ApplicationWindow.qml   ComboBox.qmlc                Private           SpinBox.qmlc              Styles                TextArea.qml
+ApplicationWindow.qmlc  GroupBox.qml                 ProgressBar.qml   SplitView.qml             Switch.qml            TextArea.qmlc
+BusyIndicator.qml       GroupBox.qmlc                ProgressBar.qmlc  SplitView.qmlc            Switch.qmlc           TextField.qml
+BusyIndicator.qmlc      Label.qml                    qmldir            StackViewDelegate.qml     TableViewColumn.qml   TextField.qmlc
+Button.qml              Label.qmlc                   RadioButton.qml   StackViewDelegate.qmlc    TableViewColumn.qmlc  ToolBar.qml
+Button.qmlc             libqtquickcontrolsplugin.so  RadioButton.qmlc  StackView.qml             TableView.qml         ToolBar.qmlc
+Calendar.qml            MenuBar.qml                  ScrollView.qml    StackView.qmlc            TableView.qmlc        ToolButton.qml
+Calendar.qmlc           MenuBar.qmlc                 ScrollView.qmlc   StackViewTransition.qml   Tab.qml               ToolButton.qmlc
+CheckBox.qml            Menu.qml                     Slider.qml        StackViewTransition.qmlc  Tab.qmlc              TreeView.qml
+CheckBox.qmlc           Menu.qmlc                    Slider.qmlc       StatusBar.qml             TabView.qml           TreeView.qmlc
+ComboBox.qml            plugins.qmltypes             SpinBox.qml       StatusBar.qmlc            TabView.qmlc
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Private:
+AbstractCheckable.qml     Control.qml           MenuContentScroller.qml   StackView.jsc                     TableViewSelection.qmlc
+AbstractCheckable.qmlc    Control.qmlc          MenuContentScroller.qmlc  StackViewSlideDelegate.qml        TextHandle.qml
+BasicButton.qml           EditMenu_base.qml     MenuItemSubControls.qml   StackViewSlideDelegate.qmlc       TextHandle.qmlc
+BasicButton.qmlc          EditMenu_base.qmlc    MenuItemSubControls.qmlc  style.js                          TextInputWithHandles.qml
+BasicTableView.qml        EditMenu.qml          ModalPopupBehavior.qml    style.jsc                         TextInputWithHandles.qmlc
+BasicTableView.qmlc       EditMenu.qmlc         ModalPopupBehavior.qmlc   Style.qml                         TextSingleton.qml
+CalendarHeaderModel.qml   FastGlow.qml          qmldir                    Style.qmlc                        TextSingleton.qmlc
+CalendarHeaderModel.qmlc  FastGlow.qmlc         ScrollBar.qml             SystemPaletteSingleton.qml        ToolMenuButton.qml
+CalendarUtils.js          FocusFrame.qml        ScrollBar.qmlc            SystemPaletteSingleton.qmlc       ToolMenuButton.qmlc
+CalendarUtils.jsc         FocusFrame.qmlc       ScrollViewHelper.qml      TabBar.qml                        TreeViewItemDelegateLoader.qml
+ColumnMenuContent.qml     HoverButton.qml       ScrollViewHelper.qmlc     TabBar.qmlc                       TreeViewItemDelegateLoader.qmlc
+ColumnMenuContent.qmlc    HoverButton.qmlc      SourceProxy.qml           TableViewItemDelegateLoader.qml
+ContentItem.qml           MenuContentItem.qml   SourceProxy.qmlc          TableViewItemDelegateLoader.qmlc
+ContentItem.qmlc          MenuContentItem.qmlc  StackView.js              TableViewSelection.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Styles:
+Base  Desktop  Flat  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base:
+ApplicationWindowStyle.qml   CircularTickmarkLabelStyle.qml   HandleStyleHelper.qml   ScrollViewStyle.qmlc       TextAreaStyle.qmlc
+ApplicationWindowStyle.qmlc  CircularTickmarkLabelStyle.qmlc  HandleStyleHelper.qmlc  SliderStyle.qml            TextFieldStyle.qml
+BasicTableViewStyle.qml      ComboBoxStyle.qml                HandleStyle.qml         SliderStyle.qmlc           TextFieldStyle.qmlc
+BasicTableViewStyle.qmlc     ComboBoxStyle.qmlc               HandleStyle.qmlc        SpinBoxStyle.qml           ToggleButtonStyle.qml
+BusyIndicatorStyle.qml       CommonStyleHelper.qml            images                  SpinBoxStyle.qmlc          ToggleButtonStyle.qmlc
+BusyIndicatorStyle.qmlc      CommonStyleHelper.qmlc           MenuBarStyle.qml        StatusBarStyle.qml         ToolBarStyle.qml
+ButtonStyle.qml              DelayButtonStyle.qml             MenuBarStyle.qmlc       StatusBarStyle.qmlc        ToolBarStyle.qmlc
+ButtonStyle.qmlc             DelayButtonStyle.qmlc            MenuStyle.qml           StatusIndicatorStyle.qml   ToolButtonStyle.qml
+CalendarStyle.qml            DialStyle.qml                    MenuStyle.qmlc          StatusIndicatorStyle.qmlc  ToolButtonStyle.qmlc
+CalendarStyle.qmlc           DialStyle.qmlc                   PieMenuStyle.qml        SwitchStyle.qml            TreeViewStyle.qml
+CheckBoxStyle.qml            FocusFrameStyle.qml              PieMenuStyle.qmlc       SwitchStyle.qmlc           TreeViewStyle.qmlc
+CheckBoxStyle.qmlc           FocusFrameStyle.qmlc             ProgressBarStyle.qml    TableViewStyle.qml         TumblerStyle.qml
+CircularButtonStyle.qml      GaugeStyle.qml                   ProgressBarStyle.qmlc   TableViewStyle.qmlc        TumblerStyle.qmlc
+CircularButtonStyle.qmlc     GaugeStyle.qmlc                  RadioButtonStyle.qml    TabViewStyle.qml
+CircularGaugeStyle.qml       GroupBoxStyle.qml                RadioButtonStyle.qmlc   TabViewStyle.qmlc
+CircularGaugeStyle.qmlc      GroupBoxStyle.qmlc               ScrollViewStyle.qml     TextAreaStyle.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Styles/Base/images:
+arrow-down@2x.png   arrow-up@2x.png  editbox.png         needle.png                       slider-groove.png   tab_selected.png
+arrow-down.png      arrow-up.png     focusframe.png      progress-indeterminate.png       slider-handle.png
+arrow-left@2x.png   button_down.png  groupbox.png        rightanglearrow.png              spinner_large.png
+arrow-left.png      button.png       header.png          scrollbar-handle-horizontal.png  spinner_medium.png
+arrow-right@2x.png  check@2x.png     knob.png            scrollbar-handle-transient.png   spinner_small.png
+arrow-right.png     check.png        leftanglearrow.png  scrollbar-handle-vertical.png    tab.png
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Styles/Desktop:
+ApplicationWindowStyle.qml   CheckBoxStyle.qmlc    MenuStyle.qml          ScrollViewStyle.qml   SwitchStyle.qmlc     ToolBarStyle.qml
+ApplicationWindowStyle.qmlc  ComboBoxStyle.qml     MenuStyle.qmlc         ScrollViewStyle.qmlc  TableViewStyle.qml   ToolBarStyle.qmlc
+BusyIndicatorStyle.qml       ComboBoxStyle.qmlc    ProgressBarStyle.qml   SliderStyle.qml       TableViewStyle.qmlc  ToolButtonStyle.qml
+BusyIndicatorStyle.qmlc      FocusFrameStyle.qml   ProgressBarStyle.qmlc  SliderStyle.qmlc      TabViewStyle.qml     ToolButtonStyle.qmlc
+ButtonStyle.qml              FocusFrameStyle.qmlc  qmldir                 SpinBoxStyle.qml      TabViewStyle.qmlc    TreeViewStyle.qml
+ButtonStyle.qmlc             GroupBoxStyle.qml     RadioButtonStyle.qml   SpinBoxStyle.qmlc     TextAreaStyle.qml    TreeViewStyle.qmlc
+CalendarStyle.qml            GroupBoxStyle.qmlc    RadioButtonStyle.qmlc  StatusBarStyle.qml    TextAreaStyle.qmlc
+CalendarStyle.qmlc           MenuBarStyle.qml      RowItemSingleton.qml   StatusBarStyle.qmlc   TextFieldStyle.qml
+CheckBoxStyle.qml            MenuBarStyle.qmlc     RowItemSingleton.qmlc  SwitchStyle.qml       TextFieldStyle.qmlc
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls/Styles/Flat:
+libqtquickextrasflatplugin.so  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2:
+AbstractButton.qml     Control.qml          ItemDelegate.qml              Pane.qml             ScrollView.qml      TextField.qml
+ActionGroup.qml        DelayButton.qml      Label.qml                     plugins.qmltypes     Slider.qml          ToolBar.qml
+Action.qml             designer             libqtquickcontrols2plugin.so  Popup.qml            SpinBox.qml         ToolButton.qml
+ApplicationWindow.qml  DialogButtonBox.qml  Material                      ProgressBar.qml      StackView.qml       ToolSeparator.qml
+BusyIndicator.qml      Dialog.qml           MenuBarItem.qml               qmldir               SwipeDelegate.qml   ToolTip.qml
+ButtonGroup.qml        Dial.qml             MenuBar.qml                   RadioButton.qml      SwipeView.qml       Tumbler.qml
+Button.qml             Drawer.qml           MenuItem.qml                  RadioDelegate.qml    SwitchDelegate.qml  Universal
+CheckBox.qml           Frame.qml            Menu.qml                      RangeSlider.qml      Switch.qml
+CheckDelegate.qml      Fusion               MenuSeparator.qml             RoundButton.qml      TabBar.qml
+ComboBox.qml           GroupBox.qml         PageIndicator.qml             ScrollBar.qml        TabButton.qml
+Container.qml          Imagine              Page.qml                      ScrollIndicator.qml  TextArea.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/designer:
+AbstractButtonSection.qml   ControlSpecifics.qml       PageIndicatorSpecifics.qml  ScrollViewSpecifics.qml      TextAreaSpecifics.qml
+BusyIndicatorSpecifics.qml  DelayButtonSpecifics.qml   PageSpecifics.qml           SliderSpecifics.qml          TextFieldSpecifics.qml
+ButtonSection.qml           DialSpecifics.qml          PaneSection.qml             SpinBoxSpecifics.qml         ToolBarSpecifics.qml
+ButtonSpecifics.qml         FrameSpecifics.qml         PaneSpecifics.qml           StackViewSpecifics.qml       ToolButtonSpecifics.qml
+CheckBoxSpecifics.qml       GroupBoxSpecifics.qml      ProgressBarSpecifics.qml    SwipeDelegateSpecifics.qml   ToolSeparatorSpecifics.qml
+CheckDelegateSpecifics.qml  images                     qtquickcontrols2.metainfo   SwipeViewSpecifics.qml       TumblerSpecifics.qml
+CheckSection.qml            ItemDelegateSection.qml    RadioButtonSpecifics.qml    SwitchDelegateSpecifics.qml
+ComboBoxSpecifics.qml       ItemDelegateSpecifics.qml  RadioDelegateSpecifics.qml  SwitchSpecifics.qml
+ContainerSection.qml        LabelSpecifics.qml         RangeSliderSpecifics.qml    TabBarSpecifics.qml
+ControlSection.qml          PaddingSection.qml         RoundButtonSpecifics.qml    TabButtonSpecifics.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/designer/images:
+busyindicator-icon16.png   frame-icon16.png           pane-icon16.png          slider-icon16.png      textfield-icon16.png
+busyindicator-icon@2x.png  frame-icon@2x.png          pane-icon@2x.png         slider-icon@2x.png     textfield-icon@2x.png
+busyindicator-icon.png     frame-icon.png             pane-icon.png            slider-icon.png        textfield-icon.png
+button-icon16.png          groupbox-icon16.png        progressbar-icon16.png   spinbox-icon16.png     toolbar-icon16.png
+button-icon@2x.png         groupbox-icon@2x.png       progressbar-icon@2x.png  spinbox-icon@2x.png    toolbar-icon@2x.png
+button-icon.png            groupbox-icon.png          progressbar-icon.png     spinbox-icon.png       toolbar-icon.png
+checkbox-icon16.png        itemdelegate-icon16.png    radiobutton-icon16.png   stackview-icon16.png   toolbutton-icon16.png
+checkbox-icon@2x.png       itemdelegate-icon@2x.png   radiobutton-icon@2x.png  stackview-icon@2x.png  toolbutton-icon@2x.png
+checkbox-icon.png          itemdelegate-icon.png      radiobutton-icon.png     stackview-icon.png     toolbutton-icon.png
+combobox-icon16.png        label-icon16.png           rangeslider-icon16.png   swipeview-icon16.png   toolseparator-icon16.png
+combobox-icon@2x.png       label-icon@2x.png          rangeslider-icon@2x.png  swipeview-icon@2x.png  toolseparator-icon@2x.png
+combobox-icon.png          label-icon.png             rangeslider-icon.png     swipeview-icon.png     toolseparator-icon.png
+delaybutton-icon16.png     page-icon16.png            roundbutton-icon16.png   switch-icon16.png      tumbler-icon16.png
+delaybutton-icon@2x.png    page-icon@2x.png           roundbutton-icon@2x.png  switch-icon@2x.png     tumbler-icon@2x.png
+delaybutton-icon.png       page-icon.png              roundbutton-icon.png     switch-icon.png        tumbler-icon.png
+dial-icon16.png            pageindicator-icon16.png   scrollview-icon16.png    textarea-icon16.png
+dial-icon@2x.png           pageindicator-icon@2x.png  scrollview-icon@2x.png   textarea-icon@2x.png
+dial-icon.png              pageindicator-icon.png     scrollview-icon.png      textarea-icon.png
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/Fusion:
+ApplicationWindow.qml  DialogButtonBox.qml                      MenuBarItem.qml    Popup.qml           ScrollIndicator.qml  TabBar.qml
+BusyIndicator.qml      Dialog.qml                               MenuBar.qml        ProgressBar.qml     SliderGroove.qml     TabButton.qml
+ButtonPanel.qml        Dial.qml                                 MenuItem.qml       qmldir              SliderHandle.qml     TextArea.qml
+Button.qml             Drawer.qml                               Menu.qml           RadioButton.qml     Slider.qml           TextField.qml
+CheckBox.qml           Frame.qml                                MenuSeparator.qml  RadioDelegate.qml   SpinBox.qml          ToolBar.qml
+CheckDelegate.qml      GroupBox.qml                             PageIndicator.qml  RadioIndicator.qml  SwipeDelegate.qml    ToolButton.qml
+CheckIndicator.qml     ItemDelegate.qml                         Page.qml           RangeSlider.qml     SwitchDelegate.qml   ToolSeparator.qml
+ComboBox.qml           Label.qml                                Pane.qml           RoundButton.qml     SwitchIndicator.qml  ToolTip.qml
+DelayButton.qml        libqtquickcontrols2fusionstyleplugin.so  plugins.qmltypes   ScrollBar.qml       Switch.qml           Tumbler.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/Imagine:
+ApplicationWindow.qml  Dialog.qml                                MenuItem.qml       ProgressBar.qml      Slider.qml          TabButton.qml
+BusyIndicator.qml      Dial.qml                                  Menu.qml           qmldir               SpinBox.qml         TextArea.qml
+Button.qml             Drawer.qml                                MenuSeparator.qml  RadioButton.qml      StackView.qml       TextField.qml
+CheckBox.qml           Frame.qml                                 PageIndicator.qml  RadioDelegate.qml    SwipeDelegate.qml   ToolBar.qml
+CheckDelegate.qml      GroupBox.qml                              Page.qml           RangeSlider.qml      SwipeView.qml       ToolButton.qml
+ComboBox.qml           ItemDelegate.qml                          Pane.qml           RoundButton.qml      SwitchDelegate.qml  ToolSeparator.qml
+DelayButton.qml        Label.qml                                 plugins.qmltypes   ScrollBar.qml        Switch.qml          ToolTip.qml
+DialogButtonBox.qml    libqtquickcontrols2imaginestyleplugin.so  Popup.qml          ScrollIndicator.qml  TabBar.qml          Tumbler.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/Material:
+ApplicationWindow.qml  DialogButtonBox.qml                        MenuBarItem.qml    ProgressBar.qml      SliderHandle.qml     TabButton.qml
+BoxShadow.qml          Dialog.qml                                 MenuBar.qml        qmldir               Slider.qml           TextArea.qml
+BusyIndicator.qml      Dial.qml                                   MenuItem.qml       RadioButton.qml      SpinBox.qml          TextField.qml
+Button.qml             Drawer.qml                                 Menu.qml           RadioDelegate.qml    StackView.qml        ToolBar.qml
+CheckBox.qml           ElevationEffect.qml                        MenuSeparator.qml  RadioIndicator.qml   SwipeDelegate.qml    ToolButton.qml
+CheckDelegate.qml      Frame.qml                                  PageIndicator.qml  RangeSlider.qml      SwipeView.qml        ToolSeparator.qml
+CheckIndicator.qml     GroupBox.qml                               Page.qml           RectangularGlow.qml  SwitchDelegate.qml   ToolTip.qml
+ComboBox.qml           ItemDelegate.qml                           Pane.qml           RoundButton.qml      SwitchIndicator.qml  Tumbler.qml
+CursorDelegate.qml     Label.qml                                  plugins.qmltypes   ScrollBar.qml        Switch.qml
+DelayButton.qml        libqtquickcontrols2materialstyleplugin.so  Popup.qml          ScrollIndicator.qml  TabBar.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Controls.2/Universal:
+ApplicationWindow.qml  Drawer.qml                                  PageIndicator.qml   RoundButton.qml      TabButton.qml
+BusyIndicator.qml      Frame.qml                                   Page.qml            ScrollBar.qml        TextArea.qml
+Button.qml             GroupBox.qml                                Pane.qml            ScrollIndicator.qml  TextField.qml
+CheckBox.qml           ItemDelegate.qml                            plugins.qmltypes    Slider.qml           ToolBar.qml
+CheckDelegate.qml      Label.qml                                   Popup.qml           SpinBox.qml          ToolButton.qml
+CheckIndicator.qml     libqtquickcontrols2universalstyleplugin.so  ProgressBar.qml     StackView.qml        ToolSeparator.qml
+ComboBox.qml           MenuBarItem.qml                             qmldir              SwipeDelegate.qml    ToolTip.qml
+DelayButton.qml        MenuBar.qml                                 RadioButton.qml     SwitchDelegate.qml   Tumbler.qml
+DialogButtonBox.qml    MenuItem.qml                                RadioDelegate.qml   SwitchIndicator.qml
+Dialog.qml             Menu.qml                                    RadioIndicator.qml  Switch.qml
+Dial.qml               MenuSeparator.qml                           RangeSlider.qml     TabBar.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Dialogs:
+DefaultColorDialog.qml     DefaultFileDialog.qml   DefaultMessageDialog.qml   plugins.qmltypes  WidgetColorDialog.qml   WidgetFontDialog.qml
+DefaultColorDialog.qmlc    DefaultFileDialog.qmlc  DefaultMessageDialog.qmlc  Private           WidgetColorDialog.qmlc  WidgetFontDialog.qmlc
+DefaultDialogWrapper.qml   DefaultFontDialog.qml   images                     qml               WidgetFileDialog.qml    WidgetMessageDialog.qml
+DefaultDialogWrapper.qmlc  DefaultFontDialog.qmlc  libdialogplugin.so         qmldir            WidgetFileDialog.qmlc   WidgetMessageDialog.qmlc
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Dialogs/images:
+checkers.png   copy.png      crosshairs.png   question.png       sunken_frame.png  window_border.png
+checkmark.png  critical.png  information.png  slider_handle.png  warning.png
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Dialogs/Private:
+libdialogsprivateplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Dialogs/qml:
+ColorSlider.qml   DefaultWindowDecoration.qml   IconButtonStyle.qml   IconGlyph.qml   icons.ttf
+ColorSlider.qmlc  DefaultWindowDecoration.qmlc  IconButtonStyle.qmlc  IconGlyph.qmlc  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Extras:
+CircularGauge.qml   designer   Gauge.qmlc                 plugins.qmltypes     StatusIndicator.qmlc  TumblerColumn.qmlc
+CircularGauge.qmlc  Dial.qml   libqtquickextrasplugin.so  Private              ToggleButton.qml      Tumbler.qml
+DelayButton.qml     Dial.qmlc  PieMenu.qml                qmldir               ToggleButton.qmlc     Tumbler.qmlc
+DelayButton.qmlc    Gauge.qml  PieMenu.qmlc               StatusIndicator.qml  TumblerColumn.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Extras/designer:
+CircularGaugeSpecifics.qml   DialSpecifics.qml    images                 PieMenuSpecifics.qmlc          ToggleButtonSpecifics.qml
+CircularGaugeSpecifics.qmlc  DialSpecifics.qmlc   PictureSpecifics.qml   qtquickextras.metainfo         ToggleButtonSpecifics.qmlc
+DelayButtonSpecifics.qml     GaugeSpecifics.qml   PictureSpecifics.qmlc  StatusIndicatorSpecifics.qml
+DelayButtonSpecifics.qmlc    GaugeSpecifics.qmlc  PieMenuSpecifics.qml   StatusIndicatorSpecifics.qmlc
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Extras/designer/images:
+circulargauge-icon16.png  delaybutton-icon.png  gauge-icon16.png    picture-icon.png    statusindicator-icon16.png  togglebutton-icon.png
+circulargauge-icon.png    dial-icon16.png       gauge-icon.png      piemenu-icon16.png  statusindicator-icon.png    tumbler-icon16.png
+delaybutton-icon16.png    dial-icon.png         picture-icon16.png  piemenu-icon.png    togglebutton-icon16.png     tumbler-icon.png
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Extras/Private:
+CircularButton.qml             CircularButtonStyleHelper.qmlc  Handle.qml       PieMenuIcon.qmlc   TextSingleton.qmlc
+CircularButton.qmlc            CircularTickmarkLabel.qml       Handle.qmlc      qmldir
+CircularButtonStyleHelper.qml  CircularTickmarkLabel.qmlc      PieMenuIcon.qml  TextSingleton.qml
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Layouts:
+libqquicklayoutsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/LocalStorage:
+libqmllocalstorageplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Particles.2:
+libparticlesplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/PrivateWidgets:
+libwidgetsplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Scene2D:
+libqtquickscene2dplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Scene3D:
+libqtquickscene3dplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Shapes:
+libqmlshapesplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Templates.2:
+libqtquicktemplates2plugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/Window.2:
+libwindowplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick/XmlListModel:
+libqmlxmllistmodelplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtQuick.2:
+libqtquick2plugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtSensors:
+libdeclarative_sensors.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtTest:
+libqmltestplugin.so  plugins.qmltypes  qmldir  SignalSpy.qml  TestCase.qml  testlogger.js
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtWebChannel:
+libdeclarative_webchannel.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtWebEngine:
+Controls1Delegates  Controls2Delegates  libqtwebengineplugin.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtWebEngine/Controls1Delegates:
+AlertDialog.qml           ColorDialog.qml    FilePicker.qml  Menu.qml           PromptDialog.qml  ToolTip.qml
+AuthenticationDialog.qml  ConfirmDialog.qml  MenuItem.qml    MenuSeparator.qml  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtWebEngine/Controls2Delegates:
+AlertDialog.qml           ConfirmDialog.qml  MenuItem.qml  MenuSeparator.qml  qmldir        ToolTip.qml
+AuthenticationDialog.qml  information.png    Menu.qml      PromptDialog.qml   question.png
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/qml/QtWebSockets:
+libdeclarative_qmlwebsockets.so  plugins.qmltypes  qmldir
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/resources:
+icudtl.dat  qtwebengine_devtools_resources.pak  qtwebengine_resources_100p.pak  qtwebengine_resources_200p.pak  qtwebengine_resources.pak
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/translations:
+qtbase_ar.qm  qtbase_de.qm  qtbase_gd.qm  qtbase_ko.qm  qtbase_uk.qm         qtdeclarative_es.qm  qtdeclarative_ko.qm  qtdeclarative_uk.qm
+qtbase_bg.qm  qtbase_en.qm  qtbase_he.qm  qtbase_lv.qm  qtdeclarative_bg.qm  qtdeclarative_fi.qm  qtdeclarative_lv.qm  qtwebengine_locales
+qtbase_ca.qm  qtbase_es.qm  qtbase_hu.qm  qtbase_pl.qm  qtdeclarative_da.qm  qtdeclarative_fr.qm  qtdeclarative_pl.qm
+qtbase_cs.qm  qtbase_fi.qm  qtbase_it.qm  qtbase_ru.qm  qtdeclarative_de.qm  qtdeclarative_hu.qm  qtdeclarative_ru.qm
+qtbase_da.qm  qtbase_fr.qm  qtbase_ja.qm  qtbase_sk.qm  qtdeclarative_en.qm  qtdeclarative_ja.qm  qtdeclarative_sk.qm
+
+./ViPlayerNew/ViPlayerBin/PyQt5/Qt/translations/qtwebengine_locales:
+am.pak  ca.pak  el.pak      es.pak   fi.pak  hi.pak  it.pak  lt.pak  ms.pak  pt-BR.pak  sk.pak  sw.pak  tr.pak     zh-TW.pak
+ar.pak  cs.pak  en-GB.pak   et.pak   fr.pak  hr.pak  ja.pak  lv.pak  nb.pak  pt-PT.pak  sl.pak  ta.pak  uk.pak
+bg.pak  da.pak  en-US.pak   fa.pak   gu.pak  hu.pak  kn.pak  ml.pak  nl.pak  ro.pak     sr.pak  te.pak  vi.pak
+bn.pak  de.pak  es-419.pak  fil.pak  he.pak  id.pak  ko.pak  mr.pak  pl.pak  ru.pak     sv.pak  th.pak  zh-CN.pak
+
+./ViPlayerNew/ViPlayerBin/PyQt5/uic:
+widget-plugins
+
+./ViPlayerNew/ViPlayerBin/PyQt5/uic/widget-plugins:
+__pycache__  qaxcontainer.py  qscintilla.py  qtcharts.py  qtprintsupport.py  qtquickwidgets.py  qtwebenginewidgets.py  qtwebkit.py
+
+./ViPlayerNew/ViPlayerBin/PyQt5/uic/widget-plugins/__pycache__:
+qaxcontainer.cpython-38.pyc  qtcharts.cpython-38.pyc        qtquickwidgets.cpython-38.pyc      qtwebkit.cpython-38.pyc
+qscintilla.cpython-38.pyc    qtprintsupport.cpython-38.pyc  qtwebenginewidgets.cpython-38.pyc
+
+./ViPlayerNew/ViPlayerBin/setuptools-69.1.1.dist-info:
+entry_points.txt  INSTALLER  LICENSE  METADATA  RECORD  REQUESTED  top_level.txt  WHEEL
+
+./ViPlayerNew/ViPlayerBin/simplejson:
+_speedups.cpython-38-x86_64-linux-gnu.so
+
+./ViPlayerNew/ViPlayerBin/vlc:
+libvlc_pulse.so    libvlc_pulse.so.0.0.0  libvlc_vdpau.so.0      libvlc_xcb_events.so    libvlc_xcb_events.so.0.0.0  plugins
+libvlc_pulse.so.0  libvlc_vdpau.so        libvlc_vdpau.so.0.0.0  libvlc_xcb_events.so.0  lua                         vlc-cache-gen
+
+./ViPlayerNew/ViPlayerBin/vlc/lua:
+extensions  intf  meta  modules  playlist  sd
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/extensions:
+VLSub.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/intf:
+cli.luac  dummy.luac  dumpmeta.luac  http.luac  luac.luac  modules  telnet.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/intf/modules:
+host.luac  httprequests.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/meta:
+art  reader
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/meta/art:
+00_musicbrainz.luac  01_googleimage.luac  02_frenchtv.luac  03_lastfm.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/meta/reader:
+filename.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/modules:
+common.luac  dkjson.luac  sandbox.luac  simplexml.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/playlist:
+anevia_streams.luac  appletrailers.luac  cue.luac          jamendo.luac  liveleak.luac    rockbox_fm_presets.luac  twitch.luac  vocaroo.luac
+anevia_xml.luac      bbc_co_uk.luac      dailymotion.luac  koreus.luac   newgrounds.luac  soundcloud.luac          vimeo.luac   youtube.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/lua/sd:
+icecast.luac  jamendo.luac
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins:
+access         audio_output  gui       meta_engine  packetizer          stream_extractor  vaapi         video_output
+access_output  codec         keystore  misc         plugins.dat         stream_filter     vdpau         video_splitter
+audio_filter   control       logger    mux          services_discovery  stream_out        video_chroma  visualization
+audio_mixer    demux         lua       notify       spu                 text_renderer     video_filter
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/access:
+libaccess_alsa_plugin.so      libavio_plugin.so    libdvdread_plugin.so     liblibbluray_plugin.so     libsatip_plugin.so     libudp_plugin.so
+libaccess_concat_plugin.so    libcdda_plugin.so    libfilesystem_plugin.so  liblinsys_hdsdi_plugin.so  libsdp_plugin.so       libv4l2_plugin.so
+libaccess_imem_plugin.so      libdc1394_plugin.so  libftp_plugin.so         liblinsys_sdi_plugin.so    libsftp_plugin.so      libvcd_plugin.so
+libaccess_mms_plugin.so       libdtv_plugin.so     libhttp_plugin.so        liblive555_plugin.so       libshm_plugin.so       libvdr_plugin.so
+libaccess_mtp_plugin.so       libdv1394_plugin.so  libhttps_plugin.so       libnfs_plugin.so           libsmb_plugin.so
+libaccess_realrtsp_plugin.so  libdvb_plugin.so     libidummy_plugin.so      libpulsesrc_plugin.so      libtcp_plugin.so
+libattachment_plugin.so       libdvdnav_plugin.so  libimem_plugin.so        librtp_plugin.so           libtimecode_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/access_output:
+libaccess_output_dummy_plugin.so  libaccess_output_http_plugin.so      libaccess_output_shout_plugin.so  libaccess_output_udp_plugin.so
+libaccess_output_file_plugin.so   libaccess_output_livehttp_plugin.so  libaccess_output_srt_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/audio_filter:
+libaudiobargraph_a_plugin.so         libheadphone_channel_mixer_plugin.so  libsamplerate_plugin.so            libspeex_resampler_plugin.so
+libaudio_format_plugin.so            libkaraoke_plugin.so                  libscaletempo_pitch_plugin.so      libstereo_widen_plugin.so
+libchorus_flanger_plugin.so          libmad_plugin.so                      libscaletempo_plugin.so            libtospdif_plugin.so
+libcompressor_plugin.so              libmono_plugin.so                     libsimple_channel_mixer_plugin.so  libtrivial_channel_mixer_plugin.so
+libdolby_surround_decoder_plugin.so  libnormvol_plugin.so                  libsoxr_plugin.so                  libugly_resampler_plugin.so
+libequalizer_plugin.so               libparam_eq_plugin.so                 libspatialaudio_plugin.so
+libgain_plugin.so                    libremap_plugin.so                    libspatializer_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/audio_mixer:
+libfloat_mixer_plugin.so  libinteger_mixer_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/audio_output:
+libadummy_plugin.so  libafile_plugin.so  libalsa_plugin.so  libamem_plugin.so  libpulse_plugin.so  libsndio_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/codec:
+liba52_plugin.so      libdca_plugin.so     liblibmpeg2_plugin.so  libscte27_plugin.so     libsvcdsub_plugin.so       libvorbis_plugin.so
+libadpcm_plugin.so    libddummy_plugin.so  liblpcm_plugin.so      libsdl_image_plugin.so  libsvgdec_plugin.so        libwebvtt_plugin.so
+libaes3_plugin.so     libdvbsub_plugin.so  libmpg123_plugin.so    libshine_plugin.so      libt140_plugin.so          libx26410b_plugin.so
+libaom_plugin.so      libedummy_plugin.so  liboggspots_plugin.so  libspdif_plugin.so      libtextst_plugin.so        libx264_plugin.so
+libaraw_plugin.so     libfaad_plugin.so    libomxil_plugin.so     libspeex_plugin.so      libtheora_plugin.so        libx265_plugin.so
+libaribsub_plugin.so  libflac_plugin.so    libopus_plugin.so      libspudec_plugin.so     libttml_plugin.so          libxwd_plugin.so
+libavcodec_plugin.so  libg711_plugin.so    libpng_plugin.so       libstl_plugin.so        libtwolame_plugin.so       libzvbi_plugin.so
+libcc_plugin.so       libjpeg_plugin.so    librawvideo_plugin.so  libsubsdec_plugin.so    libuleaddvaudio_plugin.so
+libcdg_plugin.so      libkate_plugin.so    librtpvideo_plugin.so  libsubstx3g_plugin.so   libvaapi_drm_plugin.so
+libcvdsub_plugin.so   liblibass_plugin.so  libscte18_plugin.so    libsubsusf_plugin.so    libvaapi_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/control:
+libdbus_plugin.so   libgestures_plugin.so  liblirc_plugin.so    libnetsync_plugin.so  libxcb_hotkeys_plugin.so
+libdummy_plugin.so  libhotkeys_plugin.so   libmotion_plugin.so  liboldrc_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/demux:
+libadaptive_plugin.so   libdemux_chromecast_plugin.so  libimage_plugin.so   libnsc_plugin.so       librawdv_plugin.so     libty_plugin.so
+libaiff_plugin.so       libdemuxdump_plugin.so         libmjpeg_plugin.so   libnsv_plugin.so       librawvid_plugin.so    libvc1_plugin.so
+libasf_plugin.so        libdemux_stl_plugin.so         libmkv_plugin.so     libnuv_plugin.so       libreal_plugin.so      libvobsub_plugin.so
+libau_plugin.so         libdiracsys_plugin.so          libmod_plugin.so     libogg_plugin.so       libsid_plugin.so       libvoc_plugin.so
+libavformat_plugin.so   libdirectory_demux_plugin.so   libmp4_plugin.so     libplaylist_plugin.so  libsmf_plugin.so       libwav_plugin.so
+libavi_plugin.so        libes_plugin.so                libmpc_plugin.so     libps_plugin.so        libsubtitle_plugin.so  libxa_plugin.so
+libcaf_plugin.so        libflacsys_plugin.so           libmpgv_plugin.so    libpva_plugin.so       libts_plugin.so
+libdemux_cdg_plugin.so  libh26x_plugin.so              libnoseek_plugin.so  librawaud_plugin.so    libtta_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/gui:
+libncurses_plugin.so  libqt_plugin.so  libskins2_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/keystore:
+libfile_keystore_plugin.so  libkwallet_plugin.so  libmemory_keystore_plugin.so  libsecret_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/logger:
+libconsole_logger_plugin.so  libfile_logger_plugin.so  libsd_journal_plugin.so  libsyslog_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/lua:
+liblua_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/meta_engine:
+libfolder_plugin.so  libtaglib_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/misc:
+libaddonsfsstorage_plugin.so     libdbus_screensaver_plugin.so  libgnutls_plugin.so  libvod_rtsp_plugin.so
+libaddonsvorepository_plugin.so  libexport_plugin.so            liblogger_plugin.so  libxdg_screensaver_plugin.so
+libaudioscrobbler_plugin.so      libfingerprinter_plugin.so     libstats_plugin.so   libxml_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/mux:
+libmux_asf_plugin.so  libmux_dummy_plugin.so  libmux_mpjpeg_plugin.so  libmux_ps_plugin.so  libmux_wav_plugin.so
+libmux_avi_plugin.so  libmux_mp4_plugin.so    libmux_ogg_plugin.so     libmux_ts_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/notify:
+libnotify_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/packetizer:
+libpacketizer_a52_plugin.so       libpacketizer_dirac_plugin.so  libpacketizer_hevc_plugin.so        libpacketizer_mpegaudio_plugin.so
+libpacketizer_av1_plugin.so       libpacketizer_dts_plugin.so    libpacketizer_mlp_plugin.so         libpacketizer_mpegvideo_plugin.so
+libpacketizer_avparser_plugin.so  libpacketizer_flac_plugin.so   libpacketizer_mpeg4audio_plugin.so  libpacketizer_vc1_plugin.so
+libpacketizer_copy_plugin.so      libpacketizer_h264_plugin.so   libpacketizer_mpeg4video_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/services_discovery:
+libavahi_plugin.so      libmtp_plugin.so      libpulselist_plugin.so  libudev_plugin.so  libxcb_apps_plugin.so
+libmediadirs_plugin.so  libpodcast_plugin.so  libsap_plugin.so        libupnp_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/spu:
+libaudiobargraph_v_plugin.so  liblogo_plugin.so  libmosaic_plugin.so     librss_plugin.so
+libdynamicoverlay_plugin.so   libmarq_plugin.so  libremoteosd_plugin.so  libsubsdelay_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/stream_extractor:
+libarchive_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/stream_filter:
+libadf_plugin.so          libcache_read_plugin.so  libhds_plugin.so      libprefetch_plugin.so  libskiptags_plugin.so
+libcache_block_plugin.so  libdecomp_plugin.so      libinflate_plugin.so  librecord_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/stream_out:
+libstream_out_autodel_plugin.so      libstream_out_display_plugin.so        libstream_out_rtp_plugin.so
+libstream_out_bridge_plugin.so       libstream_out_dummy_plugin.so          libstream_out_setid_plugin.so
+libstream_out_chromaprint_plugin.so  libstream_out_duplicate_plugin.so      libstream_out_smem_plugin.so
+libstream_out_chromecast_plugin.so   libstream_out_es_plugin.so             libstream_out_standard_plugin.so
+libstream_out_cycle_plugin.so        libstream_out_gather_plugin.so         libstream_out_stats_plugin.so
+libstream_out_delay_plugin.so        libstream_out_mosaic_bridge_plugin.so  libstream_out_transcode_plugin.so
+libstream_out_description_plugin.so  libstream_out_record_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/text_renderer:
+libfreetype_plugin.so  libtdummy_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/vaapi:
+libvaapi_filters_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/vdpau:
+libvdpau_adjust_plugin.so   libvdpau_chroma_plugin.so       libvdpau_display_plugin.so
+libvdpau_avcodec_plugin.so  libvdpau_deinterlace_plugin.so  libvdpau_sharpen_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/video_chroma:
+libchain_plugin.so         libi420_rgb_mmx_plugin.so   libi420_yuy2_plugin.so       libi422_yuy2_plugin.so       libyuvp_plugin.so
+libgrey_yuv_plugin.so      libi420_rgb_plugin.so       libi420_yuy2_sse2_plugin.so  libi422_yuy2_sse2_plugin.so  libyuy2_i420_plugin.so
+libi420_10_p010_plugin.so  libi420_rgb_sse2_plugin.so  libi422_i420_plugin.so       librv32_plugin.so            libyuy2_i422_plugin.so
+libi420_nv12_plugin.so     libi420_yuy2_mmx_plugin.so  libi422_yuy2_mmx_plugin.so   libswscale_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/video_filter:
+libadjust_plugin.so       libcolorthres_plugin.so     libgradfun_plugin.so       liboldmovie_plugin.so     libsepia_plugin.so
+libalphamask_plugin.so    libcroppadd_plugin.so       libgradient_plugin.so      libposterize_plugin.so    libsharpen_plugin.so
+libanaglyph_plugin.so     libdeinterlace_plugin.so    libgrain_plugin.so         libpostproc_plugin.so     libtransform_plugin.so
+libantiflicker_plugin.so  libedgedetection_plugin.so  libhqdn3d_plugin.so        libpsychedelic_plugin.so  libvhs_plugin.so
+libball_plugin.so         liberase_plugin.so          libinvert_plugin.so        libpuzzle_plugin.so       libwave_plugin.so
+libblendbench_plugin.so   libextract_plugin.so        libmagnify_plugin.so       libripple_plugin.so
+libblend_plugin.so        libfps_plugin.so            libmirror_plugin.so        librotate_plugin.so
+libbluescreen_plugin.so   libfreeze_plugin.so         libmotionblur_plugin.so    libscale_plugin.so
+libcanvas_plugin.so       libgaussianblur_plugin.so   libmotiondetect_plugin.so  libscene_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/video_output:
+libaa_plugin.so       libflaschen_plugin.so          libgles2_plugin.so   libwl_shell_plugin.so    libxdg_shell_plugin.so
+libcaca_plugin.so     libglconv_vaapi_drm_plugin.so  libgl_plugin.so      libwl_shm_plugin.so      libyuv_plugin.so
+libegl_wl_plugin.so   libglconv_vaapi_wl_plugin.so   libglx_plugin.so     libxcb_window_plugin.so
+libegl_x11_plugin.so  libglconv_vaapi_x11_plugin.so  libvdummy_plugin.so  libxcb_x11_plugin.so
+libfb_plugin.so       libglconv_vdpau_plugin.so      libvmem_plugin.so    libxcb_xv_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/video_splitter:
+libclone_plugin.so  libpanoramix_plugin.so  libwall_plugin.so
+
+./ViPlayerNew/ViPlayerBin/vlc/plugins/visualization:
+libglspectrum_plugin.so  libvisual_plugin.so
+
+./ViPlayerNew/ViPlayerBin/wheel-0.42.0.dist-info:
+entry_points.txt  INSTALLER  LICENSE.txt  METADATA  RECORD  REQUESTED  WHEEL
+
+./ViWdog:
+qt.conf
